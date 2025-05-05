@@ -28,7 +28,7 @@ git commit -m "$commit_message"
 
 # Push changes to the master branch
 echo "Pushing changes to master branch..."
-git push origin master
+git push -f origin master
 
 echo "Changes successfully pushed to master branch."
 
