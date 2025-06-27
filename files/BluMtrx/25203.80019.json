@@ -1,0 +1,78 @@
+{
+  "broker": {
+    "id": 25203,
+    "name": "Cantor Fitzgerald & Co., Research Division",
+    "encrypt": "c47ccf5c-b413-4905-95b8-7eb1df8e81dc"
+  },
+  "type": {
+    "id": 7334,
+    "name": "Company Note"
+  },
+  "authors": [
+    {
+      "id": 35355,
+      "firstName": "Charles C.",
+      "lastName": "Duncan, Ph.D.",
+      "email": "Charles.Duncan@cantor.com"
+    },
+    {
+      "id": 35356,
+      "firstName": "Pete",
+      "lastName": "Stavropoulos, Ph.D.",
+      "email": "Pete.Stavropoulos@cantor.com"
+    }
+  ],
+  "issuers": [
+    {
+      "id": 9790,
+      "name": "Bionomics Ltd.",
+      "updated": 1549392265000,
+      "securities": [
+        {
+          "id": 472267,
+          "name": "Bionomics Ltd.",
+          "symbol": "BNOX",
+          "cusip": "Q1521J108",
+          "isin": "AU000000BNO5",
+          "bloomberg": "BNOX",
+          "ratingAction": "Reiterate",
+          "targetPriceAction": "Decrease",
+          "updated": 1711445400000
+        }
+      ]
+    }
+  ],
+  "industries": [
+    {
+      "id": 57454,
+      "gics": 352010,
+      "name": "Biotechnology",
+      "updated": 1717626720000
+    }
+  ],
+  "brokerTags": [],
+  "id": 12003466,
+  "brokerDocId": 80019,
+  "encrypt": "ce1ff9ba-16d5-4bdf-ae42-19f87edeb5aa",
+  "title": "BNC210 Data in Social Anxiety: Not Mining, Just Deeper Analysis and Every Good Study Suggests Two Others",
+  "titleFormatted": "BNC210 Data in Social Anxiety: Not Mining, Just Deeper Analysis and Every Good Study Suggests Two Others",
+  "synopsis": "Investment Summary. We reiterate our Overweight rating but are lowering our 12-month PT to $8 from $10. Today (3/9), Bionomics presented the full results of the P2 PREVAIL trial of BNC210 (‘210) in social anxiety disorder (SAD). Although the company previously reported top-line data that indicated that the study did not meet statistical significance on its primary endpoint during Dec 2022 (note here), the deeper look suggests that the study achieved its objectives for informing a subsequent, pos...",
+  "publishTimestamp": 1678405063000,
+  "updatedTimestamp": 1678405211000,
+  "htmlLink": "https://research-exp.bluematrix.com/docs/html/c47ccf5c-b413-4905-95b8-7eb1df8e81dc/ce1ff9ba-16d5-4bdf-ae42-19f87edeb5aa",
+  "rixmlLink": "https://research-exp.bluematrix.com/docs/rixml/c47ccf5c-b413-4905-95b8-7eb1df8e81dc/ce1ff9ba-16d5-4bdf-ae42-19f87edeb5aa",
+  "pdfLink": "https://research-exp.bluematrix.com/docs/pdf/c47ccf5c-b413-4905-95b8-7eb1df8e81dc/ce1ff9ba-16d5-4bdf-ae42-19f87edeb5aa",
+  "externalLink": false,
+  "pdfLengthNumPages": 9,
+  "assetClasses": [
+    "Equity"
+  ],
+  "assetTypes": [
+    "Stock"
+  ],
+  "countries": [
+    "US"
+  ],
+  "productCategory": "Report",
+  "focus": "Issuer"
+}

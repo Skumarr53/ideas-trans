@@ -1,0 +1,1141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Research xmlns="http://www.rixml.org/2013/2/RIXML" createDateTime="2023-04-06T11:17:04Z" language="eng"
+          researchID="5627afe1-4fe2-42e3-93da-e1642f4264ee">
+    <Product productID="5627afe1-4fe2-42e3-93da-e1642f4264ee" bluematrixDocID="234143">
+        <StatusInfo statusType="Published" statusDateTime="2023-04-06T10:54:47Z" currentStatusIndicator="Yes"/>
+        <Source>
+            <Organization type="SellSideFirm" primaryIndicator="Yes">
+                <OrganizationID idType="CreatorCode">25859</OrganizationID>
+                <OrganizationName nameType="Display">RaymondJames</OrganizationName>
+                <PersonGroup>
+                    <PersonGroupMember primaryIndicator="Yes" sequence="1">
+                        <Person personID="851">
+                            <FamilyName>McCrea</FamilyName>
+                            <GivenName>Jeremy</GivenName>
+                            <DisplayName>Jeremy McCrea</DisplayName>
+                            <JobTitle>CFA</JobTitle>
+                            <ContactInfo nature="Business">
+                                <Email>jeremy.mccrea@raymondjames.ca</Email>
+                            </ContactInfo>
+                        </Person>
+                    </PersonGroupMember>
+                    <PersonGroupMember primaryIndicator="No" sequence="2">
+                        <Person personID="1632">
+                            <FamilyName>Hussain</FamilyName>
+                            <GivenName>Noor</GivenName>
+                            <DisplayName>Noor Hussain</DisplayName>
+                            <JobTitle>CFA (Associate)</JobTitle>
+                            <ContactInfo nature="Business">
+                                <Email>noor.hussain@raymondjames.ca</Email>
+                            </ContactInfo>
+                        </Person>
+                    </PersonGroupMember>
+                </PersonGroup>
+            </Organization>
+        </Source>
+        <Content>
+            <Title>Intermediate Oil &amp; Gas Producers | Who Had the Best Reserve Report? 5 Items to Take Away</Title>
+            <TitleFormatted>
+                <![CDATA[Intermediate Oil &amp; Gas Producers | Who Had the Best Reserve Report? 5 Items to Take Away ]]></TitleFormatted>
+            <Abstract>Reserve reports can provide a great deal of future information that is not readily foreseen with
+                cashflow approaches. Although there is a lot of data in AIFs, a ‘triangulation’ of different metrics is
+                still needed to determine which entity is likely to be the most profitable, have higher growth, and is
+                the most ‘valuable’. Through our note, we look at 5 different items as ‘food for thought’ as it relates
+                to reserve data and where biases may be coming in the future. 1) Valuation We highlight how operators
+                trade today relative to their PDP reserve value, Proved Value, and 2P Value (based on YE engineer
+                reserve figures). Although PDP reserve values are generally consistent across the space, different
+                booking practices by operators make comparison of Proved and 2P reserves more difficult (depending on
+                the amount of Future Development Capital booked relative to organic cashflow). That said, we can still
+                use the valuation as a directional basis in terms of potential upside. For gas-weighted names,
+                Birchcliff and Peyto are among the least expensive names (relative to their PDP and 2P reserves). For
+                oil-weighted names, Yangarra, Lucero, Bonterra, and Obsidian are among the least expensive names
+                relative to their booked reserves. Exhibit 1: Current Enterprise Value (vs. 2021 engineer PDP, Proved
+                and 2P Reserve Value) (1) Only includes reserves disclosed with YE 2022 results. EV based on closed
+                transactions. I.e., BTE excludes reserve values/debt associated with the Ranger transaction; Crescent
+                Point excludes Montney transaction. Source: Company Reports, Raymond James Ltd. pagebreak
+            </Abstract>
+            <AbstractFormatted>
+                <![CDATA[<a id="bm-comp-e940deeb-d1ee-41bc-803d-5896bb76388e" name="bm-comp-e940deeb-d1ee-41bc-803d-5896bb76388e" class="BMCustomAnchor"></a><table><tr><td bm-component-id="e940deeb-d1ee-41bc-803d-5896bb76388e" style="vertical-align: top; width:66.666666%;"><p>Reserve reports can provide a great deal of future information that is not readily foreseen with cashflow approaches. Although there is a lot of data in AIFs, a &#8216;triangulation&#8217; of different metrics is still needed to determine which entity is likely to be the most profitable, have higher growth, and is the most &#8216;valuable&#8217;. Through our note, we look at 5 different items as &#8216;food for thought&#8217; as it relates to reserve data and where biases may be coming in the future.</p></td><td style="vertical-align: top; width:33.333335%;"></td></tr></table><a id="bm-comp-720c5c45-8d90-4674-b615-01f65053b865" name="bm-comp-720c5c45-8d90-4674-b615-01f65053b865" class="BMCustomAnchor"></a><table><tr><td bm-component-id="720c5c45-8d90-4674-b615-01f65053b865" style="vertical-align: top; width:66.666666%;"><h2 class="bm-h2">1) Valuation</h2><p>We highlight how operators trade today relative to their PDP reserve value, Proved Value, and 2P Value (based on YE engineer reserve figures). Although PDP reserve values are generally consistent across the space, different booking practices by operators make comparison of Proved and 2P reserves more difficult (depending on the amount of Future Development Capital booked relative to organic cashflow).</p><p>That said, we can still use the valuation as a directional basis in terms of potential upside. For gas-weighted names, Birchcliff and Peyto are among the least expensive names (relative to their PDP and 2P reserves). For oil-weighted names, Yangarra, Lucero, Bonterra, and Obsidian are among the least expensive names relative to their booked reserves.</p></td><td style="vertical-align: top; width:33.333335%;"></td></tr></table><a id="bm-comp-6a0e2d52-f3d7-428f-8416-3b6c6f07ab0f" name="bm-comp-6a0e2d52-f3d7-428f-8416-3b6c6f07ab0f" class="BMCustomAnchor"></a><table><tr><td bm-component-id="6a0e2d52-f3d7-428f-8416-3b6c6f07ab0f" style="vertical-align: top; width:75.000000%;"><h4 class="bm-h4">Exhibit 1: Current Enterprise Value (vs. 2021 engineer PDP, Proved and 2P Reserve Value)</h4><table id="bm-img-8064e244-961b-4344-a679-2a718166b3b7" class="bm-img-table xslt-img-exhibit"><tr><td><img bm-img-encrypt="8064e244-961b-4344-a679-2a718166b3b7" bm-img-original-width="661" bm-img-pdf="image:image_upload/234143_a6d4e60e-70d1-4f51-9af1-f2edd347270e.pdf" bm-img-svg="image:image_upload/234143_a6d4e60e-70d1-4f51-9af1-f2edd347270e.svg" bm-img-width-hint="100%" id="bm-id-8064e244-961b-4344-a679-2a718166b3b7" pdf="/nas/web/clients/raymondjames/images/image_upload/234143_a6d4e60e-70d1-4f51-9af1-f2edd347270e.pdf" src="https://raymondjames.bluematrix.com/images/image_upload/234143_a6d4e60e-70d1-4f51-9af1-f2edd347270e_661.png" svg="/nas/web/clients/raymondjames/images/image_upload/234143_a6d4e60e-70d1-4f51-9af1-f2edd347270e.svg" width="586" alt="" title="" /></td></tr></table><p>(1) Only includes reserves disclosed with YE 2022 results. EV based on closed transactions. I.e., BTE excludes reserve values/debt associated with the Ranger transaction; Crescent Point excludes Montney transaction.</p><h5 class="bm-h5">Source: Company Reports, Raymond James Ltd.</h5></td><td style="vertical-align: top; width:25.000000%;"></td></tr></table>pagebreak <a id="bm-comp-0fc98dee-3427-4647-992b-f930d72a0fe1" name="bm-comp-0fc98dee-3427-4647-992b-f930d72a0fe1" class="BMCustomAnchor"></a><table><tr><td bm-component-id="0fc98dee-3427-4647-992b-f930d72a0fe1" style="vertical-align: top; width:100.000000%;"></td></tr></table>]]></AbstractFormatted>
+            <Synopsis>Reserve reports can provide a great deal of future information that is not readily foreseen with
+                cashflow approaches. Although there is a lot of data in AIFs, a ‘triangulation’ of different metrics is
+                still needed to determine which entity is likely to be the most profitable, have higher growth, and is
+                the most ‘valuable’. Through our note, we look at 5 different items as ‘food for thought’ as it relates
+                to reserve data and where biases may be coming in the future.
+            </Synopsis>
+            <SynopsisFormatted>
+                <![CDATA[<a id="bm-comp-cdaeb005-c3f4-471a-954c-4195f6ab9131" name="bm-comp-cdaeb005-c3f4-471a-954c-4195f6ab9131" class="BMCustomAnchor"></a><table><tr><td bm-component-id="cdaeb005-c3f4-471a-954c-4195f6ab9131" style="vertical-align: top; width:100.000000%;"><p>Reserve reports can provide a great deal of future information that is not readily foreseen with cashflow approaches. Although there is a lot of data in AIFs, a &#8216;triangulation&#8217; of different metrics is still needed to determine which entity is likely to be the most profitable, have higher growth, and is the most &#8216;valuable&#8217;. Through our note, we look at 5 different items as &#8216;food for thought&#8217; as it relates to reserve data and where biases may be coming in the future.</p></td></tr></table>]]></SynopsisFormatted>
+            <Resource resourceID="5627afe1-4fe2-42e3-93da-e1642f4264ee" primaryIndicator="Yes" language="eng"
+                      sizeInBytes="1918462">
+                <Length lengthUnit="Pages">24</Length>
+                <MIMEType>application/pdf</MIMEType>
+                <Name>5627afe1-4fe2-42e3-93da-e1642f4264ee.pdf</Name>
+            </Resource>
+        </Content>
+        <Context external="Yes">
+            <IssuerDetails>
+                <Issuer issuerType="Corporate" primaryIndicator="Yes" domicileCountryCode="CA">
+                    <SecurityDetails>
+                        <Security primaryIndicator="Yes" ratingAction="Reiterate" targetPriceAction="Reiterate">
+                            <SecurityID idType="Bloomberg" idValue="AAV.T"/>
+                            <SecurityID idType="CUSIP" idValue="00791P107"/>
+                            <SecurityID idType="SEDOL" idValue="BNW0WP7"/>
+                            <SecurityID idType="Bloomberg" idValue="AAV@CN"/>
+                            <SecurityID idType="CUSIP" idValue="00791P107"/>
+                            <SecurityID idType="PublisherDefined" idValue="512735"
+                                        publisherDefinedValue="Datastream Symbol"/>
+                            <SecurityID idType="RIC" idValue="AAV.TO"/>
+                            <SecurityID idType="SEDOL" idValue="BNW0WP7"/>
+                            <SecurityID idType="ISIN" idValue="CA00791P1071"/>
+                            <SecurityID idType="PublisherDefined" idValue="AAV@CN"
+                                        publisherDefinedValue="BloombergGlobalID"/>
+                            <SecurityID idType="PublisherDefined" idValue="5" publisherDefinedValue="BlueMatrixID"/>
+                            <SecurityID idType="PublisherDefined" idValue="AAV.T"
+                                        publisherDefinedValue="BlueMatrixSymbol"/>
+                            <SecurityFinancials securityFinancialsType="Price" priorCurrent="Current">
+                                <Currency>CAD</Currency>
+                                <FinancialValue estimateActual="Estimate">7.68</FinancialValue>
+                            </SecurityFinancials>
+                            <SecurityFinancials securityFinancialsType="TargetPrice" priorCurrent="Current">
+                                <Currency>CAD</Currency>
+                                <FinancialValue estimateActual="Estimate">12</FinancialValue>
+                            </SecurityFinancials>
+                            <SecurityName>Advantage Energy Ltd.</SecurityName>
+                            <AssetClass assetClass="Equity"/>
+                            <AssetType assetType="Stock"/>
+                            <Rating rating="PublisherDefined" ratingAction="Reiterate">
+                                <PublisherDefinedValue>Moderately Aggressive Risk/Wealth Accumulation
+                                </PublisherDefinedValue>
+                                <RatingEntity ratingEntity="Publisher"/>
+                            </Rating>
+                        </Security>
+                    </SecurityDetails>
+                    <IssuerName nameType="Display">
+                        <NameValue>Advantage Energy Ltd.</NameValue>
+                    </IssuerName>
+                </Issuer>
+                <Issuer issuerType="Corporate" primaryIndicator="Yes" domicileCountryCode="CA">
+                    <SecurityDetails>
+                        <Security primaryIndicator="Yes" ratingAction="Reiterate" targetPriceAction="Reiterate">
+                            <SecurityID idType="Bloomberg" idValue="ARX.T"/>
+                            <SecurityID idType="CUSIP" idValue="00208D408"/>
+                            <SecurityID idType="SEDOL" idValue="B6463M8"/>
+                            <SecurityID idType="Bloomberg" idValue="ARX@CN"/>
+                            <SecurityID idType="CUSIP" idValue="00208D408"/>
+                            <SecurityID idType="PublisherDefined" idValue="875478"
+                                        publisherDefinedValue="Datastream Symbol"/>
+                            <SecurityID idType="RIC" idValue="ARX.TO"/>
+                            <SecurityID idType="SEDOL" idValue="B6463M8"/>
+                            <SecurityID idType="ISIN" idValue="CA00208D4084"/>
+                            <SecurityID idType="PublisherDefined" idValue="89" publisherDefinedValue="BlueMatrixID"/>
+                            <SecurityID idType="PublisherDefined" idValue="ARX.T"
+                                        publisherDefinedValue="BlueMatrixSymbol"/>
+                            <SecurityFinancials securityFinancialsType="Price" priorCurrent="Current">
+                                <Currency>CAD</Currency>
+                                <FinancialValue estimateActual="Estimate">15.8</FinancialValue>
+                            </SecurityFinancials>
+                            <SecurityFinancials securityFinancialsType="TargetPrice" priorCurrent="Current">
+                                <Currency>CAD</Currency>
+                                <FinancialValue estimateActual="Estimate">20</FinancialValue>
+                            </SecurityFinancials>
+                            <SecurityName>ARC Resources Ltd.</SecurityName>
+                            <AssetClass assetClass="Equity"/>
+                            <AssetType assetType="Stock"/>
+                            <Rating rating="PublisherDefined" ratingAction="Reiterate">
+                                <PublisherDefinedValue>Aggressive Risk/Provide Income</PublisherDefinedValue>
+                                <RatingEntity ratingEntity="Publisher"/>
+                            </Rating>
+                        </Security>
+                    </SecurityDetails>
+                    <IssuerName nameType="Display">
+                        <NameValue>ARC Resources Ltd.</NameValue>
+                    </IssuerName>
+                </Issuer>
+                <Issuer issuerType="Corporate" primaryIndicator="Yes" domicileCountryCode="CA">
+                    <SecurityDetails>
+                        <Security primaryIndicator="Yes" ratingAction="Reiterate" targetPriceAction="Reiterate">
+                            <SecurityID idType="Bloomberg" idValue="BNE.T"/>
+                            <SecurityID idType="CUSIP" idValue="098546104"/>
+                            <SecurityID idType="SEDOL" idValue="B3K3G89"/>
+                            <SecurityID idType="Bloomberg" idValue="BNE@CN"/>
+                            <SecurityID idType="CUSIP" idValue="098546104"/>
+                            <SecurityID idType="PublisherDefined" idValue="512626"
+                                        publisherDefinedValue="Datastream Symbol"/>
+                            <SecurityID idType="RIC" idValue="BNE.TO"/>
+                            <SecurityID idType="SEDOL" idValue="B3K3G89"/>
+                            <SecurityID idType="ISIN" idValue="CA0985461049"/>
+                            <SecurityID idType="PublisherDefined" idValue="2107" publisherDefinedValue="BlueMatrixID"/>
+                            <SecurityID idType="PublisherDefined" idValue="BNE.T"
+                                        publisherDefinedValue="BlueMatrixSymbol"/>
+                            <SecurityFinancials securityFinancialsType="Price" priorCurrent="Current">
+                                <Currency>CAD</Currency>
+                                <FinancialValue estimateActual="Estimate">6.89</FinancialValue>
+                            </SecurityFinancials>
+                            <SecurityFinancials securityFinancialsType="TargetPrice" priorCurrent="Current">
+                                <Currency>CAD</Currency>
+                                <FinancialValue estimateActual="Estimate">10</FinancialValue>
+                            </SecurityFinancials>
+                            <SecurityName>Bonterra Energy Corp.</SecurityName>
+                            <AssetClass assetClass="Equity"/>
+                            <AssetType assetType="Stock"/>
+                            <Rating rating="PublisherDefined" ratingAction="Reiterate">
+                                <PublisherDefinedValue>Aggressive Risk/Wealth Accumulation</PublisherDefinedValue>
+                                <RatingEntity ratingEntity="Publisher"/>
+                            </Rating>
+                        </Security>
+                    </SecurityDetails>
+                    <IssuerName nameType="Display">
+                        <NameValue>Bonterra Energy Corp.</NameValue>
+                    </IssuerName>
+                </Issuer>
+                <Issuer issuerType="Corporate" primaryIndicator="Yes" domicileCountryCode="CA">
+                    <SecurityDetails>
+                        <Security primaryIndicator="Yes" ratingAction="Reiterate" targetPriceAction="Reiterate">
+                            <SecurityID idType="Bloomberg" idValue="BIR.T"/>
+                            <SecurityID idType="CUSIP" idValue="090697103"/>
+                            <SecurityID idType="SEDOL" idValue="B0B55N1"/>
+                            <SecurityID idType="Bloomberg" idValue="BIR@CN"/>
+                            <SecurityID idType="CUSIP" idValue="090697103"/>
+                            <SecurityID idType="PublisherDefined" idValue="13593V"
+                                        publisherDefinedValue="Datastream Symbol"/>
+                            <SecurityID idType="RIC" idValue="BIR.TO"/>
+                            <SecurityID idType="SEDOL" idValue="B0B55N1"/>
+                            <SecurityID idType="ISIN" idValue="CA0906971035"/>
+                            <SecurityID idType="PublisherDefined" idValue="155" publisherDefinedValue="BlueMatrixID"/>
+                            <SecurityID idType="PublisherDefined" idValue="BIR.T"
+                                        publisherDefinedValue="BlueMatrixSymbol"/>
+                            <SecurityFinancials securityFinancialsType="Price" priorCurrent="Current">
+                                <Currency>CAD</Currency>
+                                <FinancialValue estimateActual="Estimate">7.9</FinancialValue>
+                            </SecurityFinancials>
+                            <SecurityFinancials securityFinancialsType="TargetPrice" priorCurrent="Current">
+                                <Currency>CAD</Currency>
+                                <FinancialValue estimateActual="Estimate">12</FinancialValue>
+                            </SecurityFinancials>
+                            <SecurityName>Birchcliff Energy Ltd.</SecurityName>
+                            <AssetClass assetClass="Equity"/>
+                            <AssetType assetType="Stock"/>
+                            <Rating rating="PublisherDefined" ratingAction="Reiterate">
+                                <PublisherDefinedValue>Moderately Aggressive Risk/Wealth Accumulation
+                                </PublisherDefinedValue>
+                                <RatingEntity ratingEntity="Publisher"/>
+                            </Rating>
+                        </Security>
+                    </SecurityDetails>
+                    <IssuerName nameType="Display">
+                        <NameValue>Birchcliff Energy Ltd.</NameValue>
+                    </IssuerName>
+                </Issuer>
+                <Issuer issuerType="Corporate" primaryIndicator="Yes" domicileCountryCode="CA">
+                    <SecurityDetails>
+                        <Security primaryIndicator="Yes" ratingAction="Reiterate" targetPriceAction="Reiterate">
+                            <SecurityID idType="Bloomberg" idValue="CJ.T"/>
+                            <SecurityID idType="CUSIP" idValue="14150G400"/>
+                            <SecurityID idType="SEDOL" idValue="BH8B735"/>
+                            <SecurityID idType="Bloomberg" idValue="CJ@CN"/>
+                            <SecurityID idType="CUSIP" idValue="14150G400"/>
+                            <SecurityID idType="PublisherDefined" idValue="93635N"
+                                        publisherDefinedValue="Datastream Symbol"/>
+                            <SecurityID idType="RIC" idValue="CJ.TO"/>
+                            <SecurityID idType="SEDOL" idValue="BH8B735"/>
+                            <SecurityID idType="ISIN" idValue="CA14150G4007"/>
+                            <SecurityID idType="PublisherDefined" idValue="2346" publisherDefinedValue="BlueMatrixID"/>
+                            <SecurityID idType="PublisherDefined" idValue="CJ.T"
+                                        publisherDefinedValue="BlueMatrixSymbol"/>
+                            <SecurityFinancials securityFinancialsType="Price" priorCurrent="Current">
+                                <Currency>CAD</Currency>
+                                <FinancialValue estimateActual="Estimate">7.35</FinancialValue>
+                            </SecurityFinancials>
+                            <SecurityFinancials securityFinancialsType="TargetPrice" priorCurrent="Current">
+                                <Currency>CAD</Currency>
+                                <FinancialValue estimateActual="Estimate">9</FinancialValue>
+                            </SecurityFinancials>
+                            <SecurityName>Cardinal Energy Ltd.</SecurityName>
+                            <AssetClass assetClass="Equity"/>
+                            <AssetType assetType="Stock"/>
+                            <Rating rating="PublisherDefined" ratingAction="Reiterate">
+                                <PublisherDefinedValue>Aggressive Risk/Wealth Accumulation</PublisherDefinedValue>
+                                <RatingEntity ratingEntity="Publisher"/>
+                            </Rating>
+                        </Security>
+                    </SecurityDetails>
+                    <IssuerName nameType="Display">
+                        <NameValue>Cardinal Energy Ltd.</NameValue>
+                    </IssuerName>
+                </Issuer>
+                <Issuer issuerType="Corporate" primaryIndicator="Yes" domicileCountryCode="CA">
+                    <SecurityDetails>
+                        <Security primaryIndicator="Yes" ratingAction="Reiterate" targetPriceAction="Reiterate">
+                            <SecurityID idType="Bloomberg" idValue="CPG.T"/>
+                            <SecurityID idType="CUSIP" idValue="22576C101"/>
+                            <SecurityID idType="SEDOL" idValue="B67C8W8"/>
+                            <SecurityID idType="Bloomberg" idValue="CPG@CN"/>
+                            <SecurityID idType="CUSIP" idValue="22576C101"/>
+                            <SecurityID idType="PublisherDefined" idValue="27560K"
+                                        publisherDefinedValue="Datastream Symbol"/>
+                            <SecurityID idType="RIC" idValue="CPG.TO"/>
+                            <SecurityID idType="SEDOL" idValue="B67C8W8"/>
+                            <SecurityID idType="ISIN" idValue="CA22576C1014"/>
+                            <SecurityID idType="PublisherDefined" idValue="1396" publisherDefinedValue="BlueMatrixID"/>
+                            <SecurityID idType="PublisherDefined" idValue="CPG.T"
+                                        publisherDefinedValue="BlueMatrixSymbol"/>
+                            <SecurityFinancials securityFinancialsType="Price" priorCurrent="Current">
+                                <Currency>CAD</Currency>
+                                <FinancialValue estimateActual="Estimate">10.13</FinancialValue>
+                            </SecurityFinancials>
+                            <SecurityFinancials securityFinancialsType="TargetPrice" priorCurrent="Current">
+                                <Currency>CAD</Currency>
+                                <FinancialValue estimateActual="Estimate">12.5</FinancialValue>
+                            </SecurityFinancials>
+                            <SecurityName>Crescent Point Energy Corp.</SecurityName>
+                            <AssetClass assetClass="Equity"/>
+                            <AssetType assetType="Stock"/>
+                            <Rating rating="PublisherDefined" ratingAction="Reiterate">
+                                <PublisherDefinedValue>Moderately Aggressive Risk/Wealth Accumulation
+                                </PublisherDefinedValue>
+                                <RatingEntity ratingEntity="Publisher"/>
+                            </Rating>
+                        </Security>
+                    </SecurityDetails>
+                    <IssuerName nameType="Display">
+                        <NameValue>Crescent Point Energy Corp.</NameValue>
+                    </IssuerName>
+                </Issuer>
+                <Issuer issuerType="Corporate" primaryIndicator="Yes" domicileCountryCode="CA">
+                    <SecurityDetails>
+                        <Security primaryIndicator="Yes" ratingAction="Reiterate" targetPriceAction="Reiterate">
+                            <SecurityID idType="Bloomberg" idValue="CR.T"/>
+                            <SecurityID idType="CUSIP" idValue="226533107"/>
+                            <SecurityID idType="SEDOL" idValue="2554721"/>
+                            <SecurityID idType="Bloomberg" idValue="CR@CN"/>
+                            <SecurityID idType="CUSIP" idValue="226533107"/>
+                            <SecurityID idType="PublisherDefined" idValue="27513K"
+                                        publisherDefinedValue="Datastream Symbol"/>
+                            <SecurityID idType="RIC" idValue="CR.TO"/>
+                            <SecurityID idType="SEDOL" idValue="2554721"/>
+                            <SecurityID idType="ISIN" idValue="CA2265331074"/>
+                            <SecurityID idType="PublisherDefined" idValue="290" publisherDefinedValue="BlueMatrixID"/>
+                            <SecurityID idType="PublisherDefined" idValue="CR.T"
+                                        publisherDefinedValue="BlueMatrixSymbol"/>
+                            <SecurityFinancials securityFinancialsType="Price" priorCurrent="Current">
+                                <Currency>CAD</Currency>
+                                <FinancialValue estimateActual="Estimate">4.76</FinancialValue>
+                            </SecurityFinancials>
+                            <SecurityFinancials securityFinancialsType="TargetPrice" priorCurrent="Current">
+                                <Currency>CAD</Currency>
+                                <FinancialValue estimateActual="Estimate">7</FinancialValue>
+                            </SecurityFinancials>
+                            <SecurityName>Crew Energy Inc.</SecurityName>
+                            <AssetClass assetClass="Equity"/>
+                            <AssetType assetType="Stock"/>
+                            <Rating rating="PublisherDefined" ratingAction="Reiterate">
+                                <PublisherDefinedValue>Aggressive Risk/Wealth Accumulation</PublisherDefinedValue>
+                                <RatingEntity ratingEntity="Publisher"/>
+                            </Rating>
+                        </Security>
+                    </SecurityDetails>
+                    <IssuerName nameType="Display">
+                        <NameValue>Crew Energy Inc.</NameValue>
+                    </IssuerName>
+                </Issuer>
+                <Issuer issuerType="Corporate" primaryIndicator="Yes" domicileCountryCode="CA">
+                    <SecurityDetails>
+                        <Security primaryIndicator="Yes" ratingAction="Reiterate" targetPriceAction="Reiterate">
+                            <SecurityID idType="Bloomberg" idValue="FRU.T"/>
+                            <SecurityID idType="CUSIP" idValue="356500108"/>
+                            <SecurityID idType="SEDOL" idValue="B3SJKB0"/>
+                            <SecurityID idType="Bloomberg" idValue="FRU@CN"/>
+                            <SecurityID idType="CUSIP" idValue="356500108"/>
+                            <SecurityID idType="PublisherDefined" idValue="884699"
+                                        publisherDefinedValue="Datastream Symbol"/>
+                            <SecurityID idType="RIC" idValue="FRU.TO"/>
+                            <SecurityID idType="SEDOL" idValue="B3SJKB0"/>
+                            <SecurityID idType="ISIN" idValue="CA3565001086"/>
+                            <SecurityID idType="PublisherDefined" idValue="2108" publisherDefinedValue="BlueMatrixID"/>
+                            <SecurityID idType="PublisherDefined" idValue="FRU.T"
+                                        publisherDefinedValue="BlueMatrixSymbol"/>
+                            <SecurityFinancials securityFinancialsType="Price" priorCurrent="Current">
+                                <Currency>CAD</Currency>
+                                <FinancialValue estimateActual="Estimate">14.81</FinancialValue>
+                            </SecurityFinancials>
+                            <SecurityFinancials securityFinancialsType="TargetPrice" priorCurrent="Current">
+                                <Currency>CAD</Currency>
+                                <FinancialValue estimateActual="Estimate">21</FinancialValue>
+                            </SecurityFinancials>
+                            <SecurityName>Freehold Royalties Ltd.</SecurityName>
+                            <AssetClass assetClass="Equity"/>
+                            <AssetType assetType="Stock"/>
+                            <Rating rating="PublisherDefined" ratingAction="Reiterate">
+                                <PublisherDefinedValue>Aggressive Risk/Provide Income</PublisherDefinedValue>
+                                <RatingEntity ratingEntity="Publisher"/>
+                            </Rating>
+                        </Security>
+                    </SecurityDetails>
+                    <IssuerName nameType="Display">
+                        <NameValue>Freehold Royalties Ltd.</NameValue>
+                    </IssuerName>
+                </Issuer>
+                <Issuer issuerType="Corporate" primaryIndicator="Yes" domicileCountryCode="CA">
+                    <SecurityDetails>
+                        <Security primaryIndicator="Yes" ratingAction="Reiterate" targetPriceAction="Reiterate">
+                            <SecurityID idType="Bloomberg" idValue="LOU.V"/>
+                            <SecurityID idType="CUSIP" idValue="54947L106"/>
+                            <SecurityID idType="SEDOL" idValue="BNYFPN9"/>
+                            <SecurityID idType="Bloomberg" idValue="LOU@CN"/>
+                            <SecurityID idType="CUSIP" idValue="54947L106"/>
+                            <SecurityID idType="PublisherDefined" idValue="889512"
+                                        publisherDefinedValue="Datastream Symbol"/>
+                            <SecurityID idType="RIC" idValue="LOU.V"/>
+                            <SecurityID idType="SEDOL" idValue="BNYFPN9"/>
+                            <SecurityID idType="ISIN" idValue="CA54947L1067"/>
+                            <SecurityID idType="PublisherDefined" idValue="LOU@CN"
+                                        publisherDefinedValue="BloombergGlobalID"/>
+                            <SecurityID idType="PublisherDefined" idValue="4203" publisherDefinedValue="BlueMatrixID"/>
+                            <SecurityID idType="PublisherDefined" idValue="LOU.V"
+                                        publisherDefinedValue="BlueMatrixSymbol"/>
+                            <SecurityFinancials securityFinancialsType="Price" priorCurrent="Current">
+                                <Currency>CAD</Currency>
+                                <FinancialValue estimateActual="Estimate">0.53</FinancialValue>
+                            </SecurityFinancials>
+                            <SecurityFinancials securityFinancialsType="TargetPrice" priorCurrent="Current">
+                                <Currency>CAD</Currency>
+                                <FinancialValue estimateActual="Estimate">0.9</FinancialValue>
+                            </SecurityFinancials>
+                            <SecurityName>Lucero Energy Corp.</SecurityName>
+                            <AssetClass assetClass="Equity"/>
+                            <AssetType assetType="Stock"/>
+                            <Rating rating="PublisherDefined" ratingAction="Reiterate">
+                                <PublisherDefinedValue>Outperform 2</PublisherDefinedValue>
+                                <RatingEntity ratingEntity="Publisher"/>
+                            </Rating>
+                        </Security>
+                    </SecurityDetails>
+                    <IssuerName nameType="Display">
+                        <NameValue>Lucero Energy Corp.</NameValue>
+                    </IssuerName>
+                </Issuer>
+                <Issuer issuerType="Corporate" primaryIndicator="Yes" domicileCountryCode="CA">
+                    <SecurityDetails>
+                        <Security primaryIndicator="Yes" ratingAction="Reiterate" targetPriceAction="Reiterate">
+                            <SecurityID idType="Bloomberg" idValue="HWX.T"/>
+                            <SecurityID idType="CUSIP" idValue="422096107"/>
+                            <SecurityID idType="SEDOL" idValue="BLHDDW1"/>
+                            <SecurityID idType="Bloomberg" idValue="HWX@CN"/>
+                            <SecurityID idType="CUSIP" idValue="422096107"/>
+                            <SecurityID idType="PublisherDefined" idValue="898436"
+                                        publisherDefinedValue="Datastream Symbol"/>
+                            <SecurityID idType="RIC" idValue="HWX.T"/>
+                            <SecurityID idType="SEDOL" idValue="BLHDDW1"/>
+                            <SecurityID idType="ISIN" idValue="CA4220961078"/>
+                            <SecurityID idType="PublisherDefined" idValue="HWX@CN"
+                                        publisherDefinedValue="BloombergGlobalID"/>
+                            <SecurityID idType="PublisherDefined" idValue="3574" publisherDefinedValue="BlueMatrixID"/>
+                            <SecurityID idType="PublisherDefined" idValue="HWX.T"
+                                        publisherDefinedValue="BlueMatrixSymbol"/>
+                            <SecurityFinancials securityFinancialsType="Price" priorCurrent="Current">
+                                <Currency>CAD</Currency>
+                                <FinancialValue estimateActual="Estimate">6.39</FinancialValue>
+                            </SecurityFinancials>
+                            <SecurityFinancials securityFinancialsType="TargetPrice" priorCurrent="Current">
+                                <Currency>CAD</Currency>
+                                <FinancialValue estimateActual="Estimate">9</FinancialValue>
+                            </SecurityFinancials>
+                            <SecurityName>Headwater Exploration Inc.</SecurityName>
+                            <AssetClass assetClass="Equity"/>
+                            <AssetType assetType="Stock"/>
+                            <Rating rating="PublisherDefined" ratingAction="Reiterate">
+                                <PublisherDefinedValue>Outperform 2</PublisherDefinedValue>
+                                <RatingEntity ratingEntity="Publisher"/>
+                            </Rating>
+                        </Security>
+                    </SecurityDetails>
+                    <IssuerName nameType="Display">
+                        <NameValue>Headwater Exploration Inc.</NameValue>
+                    </IssuerName>
+                </Issuer>
+                <Issuer issuerType="Corporate" primaryIndicator="Yes" domicileCountryCode="CA">
+                    <SecurityDetails>
+                        <Security primaryIndicator="Yes" ratingAction="Reiterate" targetPriceAction="Reiterate">
+                            <SecurityID idType="Bloomberg" idValue="KEL.T"/>
+                            <SecurityID idType="CUSIP" idValue="488295106"/>
+                            <SecurityID idType="SEDOL" idValue="B9KF5Q8"/>
+                            <SecurityID idType="Bloomberg" idValue="KEL@CN"/>
+                            <SecurityID idType="CUSIP" idValue="488295106"/>
+                            <SecurityID idType="PublisherDefined" idValue="88143E"
+                                        publisherDefinedValue="Datastream Symbol"/>
+                            <SecurityID idType="RIC" idValue="KEL.TO"/>
+                            <SecurityID idType="SEDOL" idValue="B9KF5Q8"/>
+                            <SecurityID idType="ISIN" idValue="CA4882951060"/>
+                            <SecurityID idType="PublisherDefined" idValue="1707" publisherDefinedValue="BlueMatrixID"/>
+                            <SecurityID idType="PublisherDefined" idValue="KEL.T"
+                                        publisherDefinedValue="BlueMatrixSymbol"/>
+                            <SecurityFinancials securityFinancialsType="Price" priorCurrent="Current">
+                                <Currency>CAD</Currency>
+                                <FinancialValue estimateActual="Estimate">4.75</FinancialValue>
+                            </SecurityFinancials>
+                            <SecurityFinancials securityFinancialsType="TargetPrice" priorCurrent="Current">
+                                <Currency>CAD</Currency>
+                                <FinancialValue estimateActual="Estimate">6</FinancialValue>
+                            </SecurityFinancials>
+                            <SecurityName>Kelt Exploration Ltd.</SecurityName>
+                            <AssetClass assetClass="Equity"/>
+                            <AssetType assetType="Stock"/>
+                            <Rating rating="PublisherDefined" ratingAction="Reiterate">
+                                <PublisherDefinedValue>Moderately Aggressive Risk/Wealth Accumulation
+                                </PublisherDefinedValue>
+                                <RatingEntity ratingEntity="Publisher"/>
+                            </Rating>
+                        </Security>
+                    </SecurityDetails>
+                    <IssuerName nameType="Display">
+                        <NameValue>Kelt Exploration Ltd.</NameValue>
+                    </IssuerName>
+                </Issuer>
+                <Issuer issuerType="Corporate" primaryIndicator="Yes" domicileCountryCode="CA">
+                    <SecurityDetails>
+                        <Security primaryIndicator="Yes" ratingAction="Reiterate" targetPriceAction="Reiterate">
+                            <SecurityID idType="Bloomberg" idValue="NVA.T"/>
+                            <SecurityID idType="CUSIP" idValue="67072Q104"/>
+                            <SecurityID idType="SEDOL" idValue="2901167"/>
+                            <SecurityID idType="Bloomberg" idValue="NVA@CN"/>
+                            <SecurityID idType="CUSIP" idValue="67072Q104"/>
+                            <SecurityID idType="PublisherDefined" idValue="27242J"
+                                        publisherDefinedValue="Datastream Symbol"/>
+                            <SecurityID idType="RIC" idValue="NVA.TO"/>
+                            <SecurityID idType="SEDOL" idValue="2901167"/>
+                            <SecurityID idType="ISIN" idValue="CA67072Q1046"/>
+                            <SecurityID idType="PublisherDefined" idValue="1790" publisherDefinedValue="BlueMatrixID"/>
+                            <SecurityID idType="PublisherDefined" idValue="NVA.T"
+                                        publisherDefinedValue="BlueMatrixSymbol"/>
+                            <SecurityFinancials securityFinancialsType="Price" priorCurrent="Current">
+                                <Currency>CAD</Currency>
+                                <FinancialValue estimateActual="Estimate">11.45</FinancialValue>
+                            </SecurityFinancials>
+                            <SecurityFinancials securityFinancialsType="TargetPrice" priorCurrent="Current">
+                                <Currency>CAD</Currency>
+                                <FinancialValue estimateActual="Estimate">16.5</FinancialValue>
+                            </SecurityFinancials>
+                            <SecurityName>NuVista Energy Ltd.</SecurityName>
+                            <AssetClass assetClass="Equity"/>
+                            <AssetType assetType="Stock"/>
+                            <Rating rating="PublisherDefined" ratingAction="Reiterate">
+                                <PublisherDefinedValue>Moderately Aggressive Risk/Wealth Accumulation
+                                </PublisherDefinedValue>
+                                <RatingEntity ratingEntity="Publisher"/>
+                            </Rating>
+                        </Security>
+                    </SecurityDetails>
+                    <IssuerName nameType="Display">
+                        <NameValue>NuVista Energy Ltd.</NameValue>
+                    </IssuerName>
+                </Issuer>
+                <Issuer issuerType="Corporate" primaryIndicator="Yes" domicileCountryCode="CA">
+                    <SecurityDetails>
+                        <Security primaryIndicator="Yes" ratingAction="Reiterate" targetPriceAction="Reiterate">
+                            <SecurityID idType="Bloomberg" idValue="OBE.T"/>
+                            <SecurityID idType="CUSIP" idValue="674482203"/>
+                            <SecurityID idType="SEDOL" idValue="BJV30F5"/>
+                            <SecurityID idType="Bloomberg" idValue="OBE@CN"/>
+                            <SecurityID idType="CUSIP" idValue="674482203"/>
+                            <SecurityID idType="PublisherDefined" idValue="517418"
+                                        publisherDefinedValue="Datastream Symbol"/>
+                            <SecurityID idType="RIC" idValue="OBE.T"/>
+                            <SecurityID idType="SEDOL" idValue="BJV30F5"/>
+                            <SecurityID idType="ISIN" idValue="CA6744822033"/>
+                            <SecurityID idType="PublisherDefined" idValue="2356" publisherDefinedValue="BlueMatrixID"/>
+                            <SecurityID idType="PublisherDefined" idValue="OBE.T"
+                                        publisherDefinedValue="BlueMatrixSymbol"/>
+                            <SecurityFinancials securityFinancialsType="Price" priorCurrent="Current">
+                                <Currency>CAD</Currency>
+                                <FinancialValue estimateActual="Estimate">9.3</FinancialValue>
+                            </SecurityFinancials>
+                            <SecurityFinancials securityFinancialsType="TargetPrice" priorCurrent="Current">
+                                <Currency>CAD</Currency>
+                                <FinancialValue estimateActual="Estimate">13.5</FinancialValue>
+                            </SecurityFinancials>
+                            <SecurityName>Obsidian Energy Ltd.</SecurityName>
+                            <AssetClass assetClass="Equity"/>
+                            <AssetType assetType="Stock"/>
+                            <Rating rating="PublisherDefined" ratingAction="Reiterate">
+                                <PublisherDefinedValue>Aggressive Risk/Wealth Accumulation</PublisherDefinedValue>
+                                <RatingEntity ratingEntity="Publisher"/>
+                            </Rating>
+                        </Security>
+                    </SecurityDetails>
+                    <IssuerName nameType="Display">
+                        <NameValue>Obsidian Energy Ltd.</NameValue>
+                    </IssuerName>
+                </Issuer>
+                <Issuer issuerType="Corporate" primaryIndicator="Yes" domicileCountryCode="CA">
+                    <SecurityDetails>
+                        <Security primaryIndicator="Yes" ratingAction="Reiterate" targetPriceAction="Reiterate">
+                            <SecurityID idType="Bloomberg" idValue="PEY.T"/>
+                            <SecurityID idType="CUSIP" idValue="717046106"/>
+                            <SecurityID idType="SEDOL" idValue="B6775F5"/>
+                            <SecurityID idType="Bloomberg" idValue="PEY@CN"/>
+                            <SecurityID idType="CUSIP" idValue="717046106"/>
+                            <SecurityID idType="PublisherDefined" idValue="670469"
+                                        publisherDefinedValue="Datastream Symbol"/>
+                            <SecurityID idType="RIC" idValue="PEY.TO"/>
+                            <SecurityID idType="SEDOL" idValue="B6775F5"/>
+                            <SecurityID idType="ISIN" idValue="CA7170461064"/>
+                            <SecurityID idType="PublisherDefined" idValue="1704" publisherDefinedValue="BlueMatrixID"/>
+                            <SecurityID idType="PublisherDefined" idValue="PEY.T"
+                                        publisherDefinedValue="BlueMatrixSymbol"/>
+                            <SecurityFinancials securityFinancialsType="Price" priorCurrent="Current">
+                                <Currency>CAD</Currency>
+                                <FinancialValue estimateActual="Estimate">12.22</FinancialValue>
+                            </SecurityFinancials>
+                            <SecurityFinancials securityFinancialsType="TargetPrice" priorCurrent="Current">
+                                <Currency>CAD</Currency>
+                                <FinancialValue estimateActual="Estimate">17</FinancialValue>
+                            </SecurityFinancials>
+                            <SecurityName>Peyto Exploration &amp; Development Corp.</SecurityName>
+                            <AssetClass assetClass="Equity"/>
+                            <AssetType assetType="Stock"/>
+                            <Rating rating="PublisherDefined" ratingAction="Reiterate">
+                                <PublisherDefinedValue>Moderately Aggressive Risk/Wealth Accumulation
+                                </PublisherDefinedValue>
+                                <RatingEntity ratingEntity="Publisher"/>
+                            </Rating>
+                        </Security>
+                    </SecurityDetails>
+                    <IssuerName nameType="Display">
+                        <NameValue>Peyto Exploration &amp; Development Corp.</NameValue>
+                    </IssuerName>
+                </Issuer>
+                <Issuer issuerType="Corporate" primaryIndicator="Yes" domicileCountryCode="CA">
+                    <SecurityDetails>
+                        <Security primaryIndicator="Yes" ratingAction="Reiterate" targetPriceAction="Reiterate">
+                            <SecurityID idType="Bloomberg" idValue="PIPE.T"/>
+                            <SecurityID idType="CUSIP" idValue="724112107"/>
+                            <SecurityID idType="SEDOL" idValue="BH42KD3"/>
+                            <SecurityID idType="Bloomberg" idValue="PIPE@CN"/>
+                            <SecurityID idType="CUSIP" idValue="724112107"/>
+                            <SecurityID idType="PublisherDefined" idValue="54747C"
+                                        publisherDefinedValue="Datastream Symbol"/>
+                            <SecurityID idType="RIC" idValue="PIPE.V"/>
+                            <SecurityID idType="SEDOL" idValue="BH42KD3"/>
+                            <SecurityID idType="ISIN" idValue="CA7241121077"/>
+                            <SecurityID idType="PublisherDefined" idValue="PIPE@CN"
+                                        publisherDefinedValue="BloombergGlobalID"/>
+                            <SecurityID idType="PublisherDefined" idValue="3001" publisherDefinedValue="BlueMatrixID"/>
+                            <SecurityID idType="PublisherDefined" idValue="PIPE.T"
+                                        publisherDefinedValue="BlueMatrixSymbol"/>
+                            <SecurityFinancials securityFinancialsType="Price" priorCurrent="Current">
+                                <Currency>CAD</Currency>
+                                <FinancialValue estimateActual="Estimate">2.84</FinancialValue>
+                            </SecurityFinancials>
+                            <SecurityFinancials securityFinancialsType="TargetPrice" priorCurrent="Current">
+                                <Currency>CAD</Currency>
+                                <FinancialValue estimateActual="Estimate">4</FinancialValue>
+                            </SecurityFinancials>
+                            <SecurityName>Pipestone Energy</SecurityName>
+                            <AssetClass assetClass="Equity"/>
+                            <AssetType assetType="Stock"/>
+                            <Rating rating="PublisherDefined" ratingAction="Reiterate">
+                                <PublisherDefinedValue>Outperform 2</PublisherDefinedValue>
+                                <RatingEntity ratingEntity="Publisher"/>
+                            </Rating>
+                        </Security>
+                    </SecurityDetails>
+                    <IssuerName nameType="Display">
+                        <NameValue>Pipestone Energy</NameValue>
+                    </IssuerName>
+                </Issuer>
+                <Issuer issuerType="Corporate" primaryIndicator="Yes" domicileCountryCode="CA">
+                    <SecurityDetails>
+                        <Security primaryIndicator="Yes" ratingAction="Reiterate" targetPriceAction="Reiterate">
+                            <SecurityID idType="Bloomberg" idValue="POU.T"/>
+                            <SecurityID idType="CUSIP" idValue="699320206"/>
+                            <SecurityID idType="SEDOL" idValue="B073FP1"/>
+                            <SecurityID idType="Bloomberg" idValue="POU@CN"/>
+                            <SecurityID idType="CUSIP" idValue="699320206"/>
+                            <SecurityID idType="PublisherDefined" idValue="981663"
+                                        publisherDefinedValue="Datastream Symbol"/>
+                            <SecurityID idType="RIC" idValue="POU.TO"/>
+                            <SecurityID idType="SEDOL" idValue="B073FP1"/>
+                            <SecurityID idType="ISIN" idValue="CA6993202069"/>
+                            <SecurityID idType="PublisherDefined" idValue="1779" publisherDefinedValue="BlueMatrixID"/>
+                            <SecurityID idType="PublisherDefined" idValue="POU.T"
+                                        publisherDefinedValue="BlueMatrixSymbol"/>
+                            <SecurityFinancials securityFinancialsType="Price" priorCurrent="Current">
+                                <Currency>CAD</Currency>
+                                <FinancialValue estimateActual="Estimate">31.02</FinancialValue>
+                            </SecurityFinancials>
+                            <SecurityFinancials securityFinancialsType="TargetPrice" priorCurrent="Current">
+                                <Currency>CAD</Currency>
+                                <FinancialValue estimateActual="Estimate">40</FinancialValue>
+                            </SecurityFinancials>
+                            <SecurityName>Paramount Resources Ltd.</SecurityName>
+                            <AssetClass assetClass="Equity"/>
+                            <AssetType assetType="Stock"/>
+                            <Rating rating="PublisherDefined" ratingAction="Reiterate">
+                                <PublisherDefinedValue>Moderately Aggressive Risk/Wealth Accumulation
+                                </PublisherDefinedValue>
+                                <RatingEntity ratingEntity="Publisher"/>
+                            </Rating>
+                        </Security>
+                    </SecurityDetails>
+                    <IssuerName nameType="Display">
+                        <NameValue>Paramount Resources Ltd.</NameValue>
+                    </IssuerName>
+                </Issuer>
+                <Issuer issuerType="Corporate" primaryIndicator="Yes" domicileCountryCode="CA">
+                    <SecurityDetails>
+                        <Security primaryIndicator="Yes" ratingAction="Reiterate" targetPriceAction="Reiterate">
+                            <SecurityID idType="Bloomberg" idValue="PSK.T"/>
+                            <SecurityID idType="CUSIP" idValue="739721108"/>
+                            <SecurityID idType="SEDOL" idValue="BN320L4"/>
+                            <SecurityID idType="Bloomberg" idValue="PSK@CN"/>
+                            <SecurityID idType="CUSIP" idValue="739721108"/>
+                            <SecurityID idType="PublisherDefined" idValue="8875AQ"
+                                        publisherDefinedValue="Datastream Symbol"/>
+                            <SecurityID idType="RIC" idValue="PSK.TO"/>
+                            <SecurityID idType="SEDOL" idValue="BN320L4"/>
+                            <SecurityID idType="ISIN" idValue="CA7397211086"/>
+                            <SecurityID idType="PublisherDefined" idValue="2109" publisherDefinedValue="BlueMatrixID"/>
+                            <SecurityID idType="PublisherDefined" idValue="PSK.T"
+                                        publisherDefinedValue="BlueMatrixSymbol"/>
+                            <SecurityFinancials securityFinancialsType="Price" priorCurrent="Current">
+                                <Currency>CAD</Currency>
+                                <FinancialValue estimateActual="Estimate">21.89</FinancialValue>
+                            </SecurityFinancials>
+                            <SecurityFinancials securityFinancialsType="TargetPrice" priorCurrent="Current">
+                                <Currency>CAD</Currency>
+                                <FinancialValue estimateActual="Estimate">30</FinancialValue>
+                            </SecurityFinancials>
+                            <SecurityName>PrairieSky Royalty Ltd.</SecurityName>
+                            <AssetClass assetClass="Equity"/>
+                            <AssetType assetType="Stock"/>
+                            <Rating rating="PublisherDefined" ratingAction="Reiterate">
+                                <PublisherDefinedValue>Aggressive Risk/Provide Income</PublisherDefinedValue>
+                                <RatingEntity ratingEntity="Publisher"/>
+                            </Rating>
+                        </Security>
+                    </SecurityDetails>
+                    <IssuerName nameType="Display">
+                        <NameValue>PrairieSky Royalty Ltd.</NameValue>
+                    </IssuerName>
+                </Issuer>
+                <Issuer issuerType="Corporate" primaryIndicator="Yes" domicileCountryCode="CA">
+                    <SecurityDetails>
+                        <Security primaryIndicator="Yes" ratingAction="Reiterate" targetPriceAction="Reiterate">
+                            <SecurityID idType="Bloomberg" idValue="SDE.T"/>
+                            <SecurityID idType="CUSIP" idValue="84678A102"/>
+                            <SecurityID idType="SEDOL" idValue="BMXNHL9"/>
+                            <SecurityID idType="Bloomberg" idValue="SDE@CN"/>
+                            <SecurityID idType="CUSIP" idValue="84678A102"/>
+                            <SecurityID idType="PublisherDefined" idValue="36062K"
+                                        publisherDefinedValue="Datastream Symbol"/>
+                            <SecurityID idType="ISIN" idValue="CA84678A1021"/>
+                            <SecurityID idType="RIC" idValue="SDE.T"/>
+                            <SecurityID idType="SEDOL" idValue="BMXNHL9"/>
+                            <SecurityID idType="PublisherDefined" idValue="3341" publisherDefinedValue="BlueMatrixID"/>
+                            <SecurityID idType="PublisherDefined" idValue="SDE.T"
+                                        publisherDefinedValue="BlueMatrixSymbol"/>
+                            <SecurityFinancials securityFinancialsType="Price" priorCurrent="Current">
+                                <Currency>CAD</Currency>
+                                <FinancialValue estimateActual="Estimate">14.09</FinancialValue>
+                            </SecurityFinancials>
+                            <SecurityFinancials securityFinancialsType="TargetPrice" priorCurrent="Current">
+                                <Currency>CAD</Currency>
+                                <FinancialValue estimateActual="Estimate">19</FinancialValue>
+                            </SecurityFinancials>
+                            <SecurityName>Spartan Delta Corp.</SecurityName>
+                            <AssetClass assetClass="Equity"/>
+                            <AssetType assetType="Stock"/>
+                            <Rating rating="PublisherDefined" ratingAction="Reiterate">
+                                <PublisherDefinedValue>Outperform 2</PublisherDefinedValue>
+                                <RatingEntity ratingEntity="Publisher"/>
+                            </Rating>
+                        </Security>
+                    </SecurityDetails>
+                    <IssuerName nameType="Display">
+                        <NameValue>Spartan Delta Corp.</NameValue>
+                    </IssuerName>
+                </Issuer>
+                <Issuer issuerType="Corporate" primaryIndicator="Yes" domicileCountryCode="CA">
+                    <SecurityDetails>
+                        <Security primaryIndicator="Yes" ratingAction="Reiterate" targetPriceAction="Reiterate">
+                            <SecurityID idType="Bloomberg" idValue="SGY.T"/>
+                            <SecurityID idType="CUSIP" idValue="86880Y877"/>
+                            <SecurityID idType="SEDOL" idValue="BN7G0P6"/>
+                            <SecurityID idType="Bloomberg" idValue="SGY@CN"/>
+                            <SecurityID idType="CUSIP" idValue="86880Y877"/>
+                            <SecurityID idType="PublisherDefined" idValue="687452"
+                                        publisherDefinedValue="Datastream Symbol"/>
+                            <SecurityID idType="RIC" idValue="SGY.T"/>
+                            <SecurityID idType="SEDOL" idValue="BN7G0P6"/>
+                            <SecurityID idType="ISIN" idValue="CA86880Y8779"/>
+                            <SecurityID idType="PublisherDefined" idValue="1526" publisherDefinedValue="BlueMatrixID"/>
+                            <SecurityID idType="PublisherDefined" idValue="SGY.T"
+                                        publisherDefinedValue="BlueMatrixSymbol"/>
+                            <SecurityFinancials securityFinancialsType="Price" priorCurrent="Current">
+                                <Currency>CAD</Currency>
+                                <FinancialValue estimateActual="Estimate">9.33</FinancialValue>
+                            </SecurityFinancials>
+                            <SecurityFinancials securityFinancialsType="TargetPrice" priorCurrent="Current">
+                                <Currency>CAD</Currency>
+                                <FinancialValue estimateActual="Estimate">14</FinancialValue>
+                            </SecurityFinancials>
+                            <SecurityName>Surge Energy Inc.</SecurityName>
+                            <AssetClass assetClass="Equity"/>
+                            <AssetType assetType="Stock"/>
+                            <Rating rating="PublisherDefined" ratingAction="Reiterate">
+                                <PublisherDefinedValue>Aggressive Risk/Wealth Accumulation</PublisherDefinedValue>
+                                <RatingEntity ratingEntity="Publisher"/>
+                            </Rating>
+                        </Security>
+                    </SecurityDetails>
+                    <IssuerName nameType="Display">
+                        <NameValue>Surge Energy Inc.</NameValue>
+                    </IssuerName>
+                </Issuer>
+                <Issuer issuerType="Corporate" primaryIndicator="Yes" domicileCountryCode="CA">
+                    <SecurityDetails>
+                        <Security primaryIndicator="Yes" ratingAction="Reiterate" targetPriceAction="Reiterate">
+                            <SecurityID idType="Bloomberg" idValue="TOU.T"/>
+                            <SecurityID idType="CUSIP" idValue="89156V106"/>
+                            <SecurityID idType="SEDOL" idValue="B3QJ0H8"/>
+                            <SecurityID idType="Bloomberg" idValue="TOU@CN"/>
+                            <SecurityID idType="CUSIP" idValue="89156V106"/>
+                            <SecurityID idType="PublisherDefined" idValue="70882L"
+                                        publisherDefinedValue="Datastream Symbol"/>
+                            <SecurityID idType="RIC" idValue="TOU.TO"/>
+                            <SecurityID idType="SEDOL" idValue="B3QJ0H8"/>
+                            <SecurityID idType="ISIN" idValue="CA89156V1067"/>
+                            <SecurityID idType="PublisherDefined" idValue="1705" publisherDefinedValue="BlueMatrixID"/>
+                            <SecurityID idType="PublisherDefined" idValue="TOU.T"
+                                        publisherDefinedValue="BlueMatrixSymbol"/>
+                            <SecurityFinancials securityFinancialsType="Price" priorCurrent="Current">
+                                <Currency>CAD</Currency>
+                                <FinancialValue estimateActual="Estimate">55.7</FinancialValue>
+                            </SecurityFinancials>
+                            <SecurityFinancials securityFinancialsType="TargetPrice" priorCurrent="Current">
+                                <Currency>CAD</Currency>
+                                <FinancialValue estimateActual="Estimate">90</FinancialValue>
+                            </SecurityFinancials>
+                            <SecurityName>Tourmaline Oil Corp.</SecurityName>
+                            <AssetClass assetClass="Equity"/>
+                            <AssetType assetType="Stock"/>
+                            <Rating rating="PublisherDefined" ratingAction="Reiterate">
+                                <PublisherDefinedValue>Moderately Aggressive Risk/Wealth Accumulation
+                                </PublisherDefinedValue>
+                                <RatingEntity ratingEntity="Publisher"/>
+                            </Rating>
+                        </Security>
+                    </SecurityDetails>
+                    <IssuerName nameType="Display">
+                        <NameValue>Tourmaline Oil Corp.</NameValue>
+                    </IssuerName>
+                </Issuer>
+                <Issuer issuerType="Corporate" primaryIndicator="Yes" domicileCountryCode="CA">
+                    <SecurityDetails>
+                        <Security primaryIndicator="Yes" ratingAction="Reiterate" targetPriceAction="Reiterate">
+                            <SecurityID idType="Bloomberg" idValue="TPZ.T"/>
+                            <SecurityID idType="CUSIP" idValue="89055A203"/>
+                            <SecurityID idType="SEDOL" idValue="BMV3Y21"/>
+                            <SecurityID idType="Bloomberg" idValue="TPZ@CN"/>
+                            <SecurityID idType="CUSIP" idValue="89055A203"/>
+                            <SecurityID idType="PublisherDefined" idValue="9885CU"
+                                        publisherDefinedValue="Datastream Symbol"/>
+                            <SecurityID idType="RIC" idValue="TPZ.T"/>
+                            <SecurityID idType="SEDOL" idValue="BMV3Y21"/>
+                            <SecurityID idType="ISIN" idValue="CA89055A2039"/>
+                            <SecurityID idType="PublisherDefined" idValue="TPZ@CN"
+                                        publisherDefinedValue="BloombergGlobalID"/>
+                            <SecurityID idType="PublisherDefined" idValue="3493" publisherDefinedValue="BlueMatrixID"/>
+                            <SecurityID idType="PublisherDefined" idValue="TPZ.T"
+                                        publisherDefinedValue="BlueMatrixSymbol"/>
+                            <SecurityFinancials securityFinancialsType="Price" priorCurrent="Current">
+                                <Currency>CAD</Currency>
+                                <FinancialValue estimateActual="Estimate">19.04</FinancialValue>
+                            </SecurityFinancials>
+                            <SecurityFinancials securityFinancialsType="TargetPrice" priorCurrent="Current">
+                                <Currency>CAD</Currency>
+                                <FinancialValue estimateActual="Estimate">28</FinancialValue>
+                            </SecurityFinancials>
+                            <SecurityName>Topaz Energy Corp.</SecurityName>
+                            <AssetClass assetClass="Equity"/>
+                            <AssetType assetType="Stock"/>
+                            <Rating rating="PublisherDefined" ratingAction="Reiterate">
+                                <PublisherDefinedValue>Aggressive Risk/Provide Income</PublisherDefinedValue>
+                                <RatingEntity ratingEntity="Publisher"/>
+                            </Rating>
+                        </Security>
+                    </SecurityDetails>
+                    <IssuerName nameType="Display">
+                        <NameValue>Topaz Energy Corp.</NameValue>
+                    </IssuerName>
+                </Issuer>
+                <Issuer issuerType="Corporate" primaryIndicator="Yes" domicileCountryCode="CA">
+                    <SecurityDetails>
+                        <Security primaryIndicator="Yes" ratingAction="Reiterate" targetPriceAction="Reiterate">
+                            <SecurityID idType="Bloomberg" idValue="TVE.T"/>
+                            <SecurityID idType="CUSIP" idValue="87505Y409"/>
+                            <SecurityID idType="SEDOL" idValue="B8J3TH5"/>
+                            <SecurityID idType="Bloomberg" idValue="TVE@CN"/>
+                            <SecurityID idType="CUSIP" idValue="87505Y409"/>
+                            <SecurityID idType="PublisherDefined" idValue="256249"
+                                        publisherDefinedValue="Datastream Symbol"/>
+                            <SecurityID idType="RIC" idValue="TVE.TO"/>
+                            <SecurityID idType="SEDOL" idValue="B8J3TH5"/>
+                            <SecurityID idType="ISIN" idValue="CA87505Y4094"/>
+                            <SecurityID idType="PublisherDefined" idValue="2336" publisherDefinedValue="BlueMatrixID"/>
+                            <SecurityID idType="PublisherDefined" idValue="TVE.T"
+                                        publisherDefinedValue="BlueMatrixSymbol"/>
+                            <SecurityFinancials securityFinancialsType="Price" priorCurrent="Current">
+                                <Currency>CAD</Currency>
+                                <FinancialValue estimateActual="Estimate">4.12</FinancialValue>
+                            </SecurityFinancials>
+                            <SecurityFinancials securityFinancialsType="TargetPrice" priorCurrent="Current">
+                                <Currency>CAD</Currency>
+                                <FinancialValue estimateActual="Estimate">5.5</FinancialValue>
+                            </SecurityFinancials>
+                            <SecurityName>Tamarack Valley Energy Ltd.</SecurityName>
+                            <AssetClass assetClass="Equity"/>
+                            <AssetType assetType="Stock"/>
+                            <Rating rating="PublisherDefined" ratingAction="Reiterate">
+                                <PublisherDefinedValue>Moderately Aggressive Risk/Wealth Accumulation
+                                </PublisherDefinedValue>
+                                <RatingEntity ratingEntity="Publisher"/>
+                            </Rating>
+                        </Security>
+                    </SecurityDetails>
+                    <IssuerName nameType="Display">
+                        <NameValue>Tamarack Valley Energy Ltd.</NameValue>
+                    </IssuerName>
+                </Issuer>
+                <Issuer issuerType="Corporate" primaryIndicator="Yes" domicileCountryCode="CA">
+                    <SecurityDetails>
+                        <Security primaryIndicator="Yes" ratingAction="Reiterate" targetPriceAction="Reiterate">
+                            <SecurityID idType="Bloomberg" idValue="VET.T"/>
+                            <SecurityID idType="CUSIP" idValue="923725105"/>
+                            <SecurityID idType="SEDOL" idValue="B607XS1"/>
+                            <SecurityID idType="Bloomberg" idValue="VET@CN"/>
+                            <SecurityID idType="CUSIP" idValue="923725105"/>
+                            <SecurityID idType="PublisherDefined" idValue="131331"
+                                        publisherDefinedValue="Datastream Symbol"/>
+                            <SecurityID idType="RIC" idValue="VET.TO"/>
+                            <SecurityID idType="SEDOL" idValue="B607XS1"/>
+                            <SecurityID idType="ISIN" idValue="CA9237251058"/>
+                            <SecurityID idType="PublisherDefined" idValue="1254" publisherDefinedValue="BlueMatrixID"/>
+                            <SecurityID idType="PublisherDefined" idValue="VET.T"
+                                        publisherDefinedValue="BlueMatrixSymbol"/>
+                            <SecurityFinancials securityFinancialsType="Price" priorCurrent="Current">
+                                <Currency>CAD</Currency>
+                                <FinancialValue estimateActual="Estimate">18.01</FinancialValue>
+                            </SecurityFinancials>
+                            <SecurityFinancials securityFinancialsType="TargetPrice" priorCurrent="Current">
+                                <Currency>CAD</Currency>
+                                <FinancialValue estimateActual="Estimate">31</FinancialValue>
+                            </SecurityFinancials>
+                            <SecurityName>Vermilion Energy Inc.</SecurityName>
+                            <AssetClass assetClass="Equity"/>
+                            <AssetType assetType="Stock"/>
+                            <Rating rating="PublisherDefined" ratingAction="Reiterate">
+                                <PublisherDefinedValue>Moderately Aggressive Risk/Wealth Accumulation
+                                </PublisherDefinedValue>
+                                <RatingEntity ratingEntity="Publisher"/>
+                            </Rating>
+                        </Security>
+                    </SecurityDetails>
+                    <IssuerName nameType="Display">
+                        <NameValue>Vermilion Energy Inc.</NameValue>
+                    </IssuerName>
+                </Issuer>
+                <Issuer issuerType="Corporate" primaryIndicator="Yes" domicileCountryCode="CA">
+                    <SecurityDetails>
+                        <Security primaryIndicator="Yes" ratingAction="Reiterate" targetPriceAction="Reiterate">
+                            <SecurityID idType="Bloomberg" idValue="WCP.T"/>
+                            <SecurityID idType="CUSIP" idValue="96467A200"/>
+                            <SecurityID idType="SEDOL" idValue="B418WK4"/>
+                            <SecurityID idType="Bloomberg" idValue="WCP@CN"/>
+                            <SecurityID idType="CUSIP" idValue="96467A200"/>
+                            <SecurityID idType="PublisherDefined" idValue="15108U"
+                                        publisherDefinedValue="Datastream Symbol"/>
+                            <SecurityID idType="RIC" idValue="WCP.TO"/>
+                            <SecurityID idType="SEDOL" idValue="B418WK4"/>
+                            <SecurityID idType="ISIN" idValue="CA96467A2002"/>
+                            <SecurityID idType="PublisherDefined" idValue="1435" publisherDefinedValue="BlueMatrixID"/>
+                            <SecurityID idType="PublisherDefined" idValue="WCP.T"
+                                        publisherDefinedValue="BlueMatrixSymbol"/>
+                            <SecurityFinancials securityFinancialsType="Price" priorCurrent="Current">
+                                <Currency>CAD</Currency>
+                                <FinancialValue estimateActual="Estimate">10.81</FinancialValue>
+                            </SecurityFinancials>
+                            <SecurityFinancials securityFinancialsType="TargetPrice" priorCurrent="Current">
+                                <Currency>CAD</Currency>
+                                <FinancialValue estimateActual="Estimate">16</FinancialValue>
+                            </SecurityFinancials>
+                            <SecurityName>Whitecap Resources Inc.</SecurityName>
+                            <AssetClass assetClass="Equity"/>
+                            <AssetType assetType="Stock"/>
+                            <Rating rating="PublisherDefined" ratingAction="Reiterate">
+                                <PublisherDefinedValue>Aggressive Risk/Provide Income</PublisherDefinedValue>
+                                <RatingEntity ratingEntity="Publisher"/>
+                            </Rating>
+                        </Security>
+                    </SecurityDetails>
+                    <IssuerName nameType="Display">
+                        <NameValue>Whitecap Resources Inc.</NameValue>
+                    </IssuerName>
+                </Issuer>
+                <Issuer issuerType="Corporate" primaryIndicator="Yes" domicileCountryCode="CA">
+                    <SecurityDetails>
+                        <Security primaryIndicator="Yes" ratingAction="Reiterate" targetPriceAction="Reiterate">
+                            <SecurityID idType="Bloomberg" idValue="YGR.T"/>
+                            <SecurityID idType="CUSIP" idValue="98474P501"/>
+                            <SecurityID idType="SEDOL" idValue="BN45959"/>
+                            <SecurityID idType="Bloomberg" idValue="YGR@CN"/>
+                            <SecurityID idType="CUSIP" idValue="98474P501"/>
+                            <SecurityID idType="PublisherDefined" idValue="26617W"
+                                        publisherDefinedValue="Datastream Symbol"/>
+                            <SecurityID idType="ISIN" idValue="CA98474P5013"/>
+                            <SecurityID idType="RIC" idValue="YGR.TO"/>
+                            <SecurityID idType="SEDOL" idValue="BN45959"/>
+                            <SecurityID idType="PublisherDefined" idValue="1889" publisherDefinedValue="BlueMatrixID"/>
+                            <SecurityID idType="PublisherDefined" idValue="YGR.T"
+                                        publisherDefinedValue="BlueMatrixSymbol"/>
+                            <SecurityFinancials securityFinancialsType="Price" priorCurrent="Current">
+                                <Currency>CAD</Currency>
+                                <FinancialValue estimateActual="Estimate">1.91</FinancialValue>
+                            </SecurityFinancials>
+                            <SecurityFinancials securityFinancialsType="TargetPrice" priorCurrent="Current">
+                                <Currency>CAD</Currency>
+                                <FinancialValue estimateActual="Estimate">3.5</FinancialValue>
+                            </SecurityFinancials>
+                            <SecurityName>Yangarra Resources Ltd.</SecurityName>
+                            <AssetClass assetClass="Equity"/>
+                            <AssetType assetType="Stock"/>
+                            <Rating rating="PublisherDefined" ratingAction="Reiterate">
+                                <PublisherDefinedValue>Moderately Aggressive Risk/Wealth Accumulation
+                                </PublisherDefinedValue>
+                                <RatingEntity ratingEntity="Publisher"/>
+                            </Rating>
+                        </Security>
+                    </SecurityDetails>
+                    <IssuerName nameType="Display">
+                        <NameValue>Yangarra Resources Ltd.</NameValue>
+                    </IssuerName>
+                </Issuer>
+            </IssuerDetails>
+            <ProductDetails publicationDateTime="2023-04-06T10:54:47Z" periodicalIndicator="No"
+                            bluematrixProductID="87">
+                <ProductCategory productCategory="Report"/>
+                <ProductFocus focus="Issuer" primaryIndicator="Yes"/>
+                <ProductName>Industry Comment</ProductName>
+            </ProductDetails>
+            <ProductClassifications>
+                <Subject subjectValue="PublisherDefined" publisherDefinedValue="Sector Analysis"
+                         bluematrixSubjectID="100"/>
+                <Country code="CA" primaryIndicator="Yes"/>
+                <SectorIndustry code="2" classificationType="PublisherDefined" level="1" focusLevel="No"
+                                primaryIndicator="Yes" bluematrixSectorID="2">
+                    <SectorIndustry code="68" classificationType="PublisherDefined" level="2" focusLevel="Yes"
+                                    primaryIndicator="Yes" bluematrixSectorID="68">
+                        <Name>Intermediate Oil &amp; Gas</Name>
+                    </SectorIndustry>
+                    <Name>Energy</Name>
+                </SectorIndustry>
+                <SectorIndustry code="10" classificationType="GICS" level="1" focusLevel="No" primaryIndicator="Yes"
+                                bluematrixSectorID="2">
+                    <Name>Energy</Name>
+                </SectorIndustry>
+                <SectorIndustry code="10102020" classificationType="GICS" level="2" focusLevel="Yes"
+                                primaryIndicator="Yes" bluematrixSectorID="68">
+                    <Name>Oil &amp; Gas Exploration &amp; Production</Name>
+                </SectorIndustry>
+                <SectorIndustry code="2" classificationType="PublisherDefined" level="1" focusLevel="No"
+                                primaryIndicator="Yes" bluematrixSectorID="2">
+                    <SectorIndustry code="69" classificationType="PublisherDefined" level="2" focusLevel="Yes"
+                                    primaryIndicator="Yes" bluematrixSectorID="69">
+                        <Name>Junior Oil &amp; Gas</Name>
+                    </SectorIndustry>
+                    <Name>Energy</Name>
+                </SectorIndustry>
+                <SectorIndustry code="10" classificationType="GICS" level="1" focusLevel="No" primaryIndicator="Yes"
+                                bluematrixSectorID="2">
+                    <Name>Energy</Name>
+                </SectorIndustry>
+                <SectorIndustry code="10102020" classificationType="GICS" level="2" focusLevel="Yes"
+                                primaryIndicator="Yes" bluematrixSectorID="69">
+                    <Name>Oil &amp; Gas Exploration &amp; Production</Name>
+                </SectorIndustry>
+                <Tag tagID="10100" code="">
+                    <Name>Catalyst Tag</Name>
+                    <TagValue tagValueID="3" rank="1" code="PDOCR">
+                        <Name>Proprietary Report</Name>
+                    </TagValue>
+                </Tag>
+                <Tag tagID="10099" code="">
+                    <Name>Exclude Express Templates</Name>
+                    <TagValue tagValueID="1" rank="1" code="YES">
+                        <Name>YES</Name>
+                    </TagValue>
+                </Tag>
+                <Tag tagID="10102" code="Hide Cite Table">
+                    <Name>Hide Cite Table</Name>
+                    <TagValue tagValueID="1" rank="1" code="YES">
+                        <Name>Yes</Name>
+                    </TagValue>
+                </Tag>
+                <Tag tagID="20" code="">
+                    <Name>Main Subject</Name>
+                    <TagValue tagValueID="100" rank="1" code="69">
+                        <Name>Sector Analysis</Name>
+                    </TagValue>
+                </Tag>
+                <Tag tagID="55" code="">
+                    <Name>Market Cap</Name>
+                    <TagValue tagValueID="1" rank="1" code="MID_CAP">
+                        <Name>Mid Cap (1B-15B)</Name>
+                    </TagValue>
+                    <TagValue tagValueID="2" rank="1" code="SMALL_CAP">
+                        <Name>Small Cap (500M-1B)</Name>
+                    </TagValue>
+                    <TagValue tagValueID="3" rank="1" code="MICRO_CAP">
+                        <Name>Micro Cap (&amp;lt;500M)</Name>
+                    </TagValue>
+                </Tag>
+                <Tag tagID="10097" code="Meeting Sign Up Canada Morning">
+                    <Name>Meeting Sign Up Canada Morning</Name>
+                    <TagValue tagValueID="1" rank="1" code="YES">
+                        <Name>YES</Name>
+                    </TagValue>
+                </Tag>
+                <Tag tagID="10070" code="ORGANIZATION_NAME">
+                    <Name>OrganizationName</Name>
+                    <TagValue tagValueID="2" rank="1" code="RJL">
+                        <Name>RJL</Name>
+                    </TagValue>
+                </Tag>
+                <Tag tagID="10098" code="ORGANIZATION_NAME_2">
+                    <Name>OrganizationName2</Name>
+                    <TagValue tagValueID="2" rank="1" code="RJL">
+                        <Name>RJL</Name>
+                    </TagValue>
+                </Tag>
+                <Tag tagID="10076" code="">
+                    <Name>Rating</Name>
+                    <TagValue tagValueID="1" rank="1" code="SB">
+                        <Name>Strong Buy 1</Name>
+                    </TagValue>
+                    <TagValue tagValueID="2" rank="1" code="OP">
+                        <Name>Outperform 2</Name>
+                    </TagValue>
+                </Tag>
+                <Tag tagID="10091" code="">
+                    <Name>Visible Alpha Transaction Tag</Name>
+                    <TagValue tagValueID="2" rank="1" code="MU">
+                        <Name>MODEL_UPDATE</Name>
+                    </TagValue>
+                </Tag>
+            </ProductClassifications>
+        </Context>
+    </Product>
+    <InternalTag>
+        <Name>AccessType</Name>
+        <Value>Public</Value>
+    </InternalTag>
+</Research>

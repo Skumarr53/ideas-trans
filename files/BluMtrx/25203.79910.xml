@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Research xmlns="http://www.rixml.org/2013/2/RIXML" createDateTime="2023-03-10T01:05:09Z" language="eng"
+          researchID="d7a43211-fd4f-406f-bbce-28e018884d3c">
+    <Product productID="d7a43211-fd4f-406f-bbce-28e018884d3c" bluematrixDocID="79910">
+        <StatusInfo statusType="Published" statusDateTime="2023-03-10T01:03:41Z" currentStatusIndicator="Yes"/>
+        <Source>
+            <Organization type="SellSideFirm" primaryIndicator="Yes">
+                <OrganizationID idType="CreatorCode">25203</OrganizationID>
+                <OrganizationName nameType="Display">Cantor Fitzgerald</OrganizationName>
+                <PersonGroup>
+                    <PersonGroupMember primaryIndicator="Yes" sequence="1">
+                        <Person personID="1137">
+                            <FamilyName>Watsek</FamilyName>
+                            <GivenName>Li</GivenName>
+                            <DisplayName>Li Watsek</DisplayName>
+                            <JobTitle></JobTitle>
+                            <ContactInfo nature="Business">
+                                <Email>Li.Watsek@cantor.com</Email>
+                            </ContactInfo>
+                        </Person>
+                    </PersonGroupMember>
+                    <PersonGroupMember primaryIndicator="No" sequence="2">
+                        <Person personID="1237">
+                            <FamilyName>Li</FamilyName>
+                            <GivenName>Rosemary</GivenName>
+                            <DisplayName>Rosemary Li</DisplayName>
+                            <JobTitle></JobTitle>
+                            <ContactInfo nature="Business">
+                                <Email>Rosemary.Li@cantor.com</Email>
+                            </ContactInfo>
+                        </Person>
+                    </PersonGroupMember>
+                </PersonGroup>
+            </Organization>
+        </Source>
+        <Content>
+            <Title>4Q Update: ROR1 CAR-T On-Track to Drive the Data Car This Year</Title>
+            <TitleFormatted><![CDATA[4Q Update: ROR1 CAR-T On-Track to Drive the Data Car This Year]]></TitleFormatted>
+            <Resource resourceID="d7a43211-fd4f-406f-bbce-28e018884d3c" primaryIndicator="Yes" language="eng"
+                      sizeInBytes="1090447">
+                <Length lengthUnit="Pages">7</Length>
+                <MIMEType>application/pdf</MIMEType>
+                <Name>d7a43211-fd4f-406f-bbce-28e018884d3c.pdf</Name>
+            </Resource>
+            <Resource resourceID="80f9db7c-170b-4bca-8de9-c50fc99e96f1" bluematrixElementID="199" primaryIndicator="No"
+                      sizeInBytes="698010">
+                <MIMEType>application/vnd.openxmlformats-officedocument.wordprocessingml.document</MIMEType>
+                <Name>onct 4q.docx</Name>
+            </Resource>
+        </Content>
+        <Context external="Yes">
+            <IssuerDetails>
+                <Issuer issuerType="Corporate" primaryIndicator="Yes" domicileCountryCode="US">
+                    <SecurityDetails>
+                        <Security primaryIndicator="Yes" ratingAction="Reiterate" targetPriceAction="Reiterate">
+                            <SecurityID idType="Bloomberg" idValue="ONCT"/>
+                            <SecurityID idType="PublisherDefined" idValue="4976" publisherDefinedValue="BlueMatrixID"/>
+                            <SecurityID idType="PublisherDefined" idValue="ONCT"
+                                        publisherDefinedValue="BlueMatrixSymbol"/>
+                            <SecurityFinancials securityFinancialsType="Price" priorCurrent="Current">
+                                <Currency>USD</Currency>
+                                <FinancialValue estimateActual="Estimate">0.8861</FinancialValue>
+                            </SecurityFinancials>
+                            <SecurityFinancials securityFinancialsType="52WeekHigh" priorCurrent="Current">
+                                <Currency>USD</Currency>
+                                <FinancialValue estimateActual="Estimate">1.87</FinancialValue>
+                            </SecurityFinancials>
+                            <SecurityFinancials securityFinancialsType="52WeekLow" priorCurrent="Current">
+                                <Currency>USD</Currency>
+                                <FinancialValue estimateActual="Estimate">0.6902</FinancialValue>
+                            </SecurityFinancials>
+                            <SecurityName>Oncternal Therapeutics, Inc.</SecurityName>
+                            <AssetClass assetClass="Equity"/>
+                            <AssetType assetType="Stock"/>
+                            <Rating rating="PositiveSentiment" ratingAction="Reiterate"/>
+                            <Rating rating="PublisherDefined" ratingAction="Reiterate">
+                                <PublisherDefinedValue>Overweight</PublisherDefinedValue>
+                                <RatingEntity ratingEntity="Publisher"/>
+                            </Rating>
+                        </Security>
+                    </SecurityDetails>
+                    <IssuerName nameType="Display">
+                        <NameValue>Oncternal Therapeutics, Inc.</NameValue>
+                    </IssuerName>
+                </Issuer>
+            </IssuerDetails>
+            <ProductDetails publicationDateTime="2023-03-10T01:03:41Z" periodicalIndicator="No" bluematrixProductID="1">
+                <ProductCategory productCategory="Report"/>
+                <ProductFocus focus="Issuer" primaryIndicator="Yes"/>
+                <ProductName>Company Note</ProductName>
+            </ProductDetails>
+            <ProductClassifications>
+                <Subject subjectValue="PublisherDefined" publisherDefinedValue="Company Update"
+                         bluematrixSubjectID="3"/>
+                <Country code="US" primaryIndicator="Yes"/>
+                <SectorIndustry code="559" classificationType="PublisherDefined" level="1" focusLevel="Yes"
+                                primaryIndicator="Yes" bluematrixSectorID="559">
+                    <Name>Biotechnology[Watsek]</Name>
+                </SectorIndustry>
+                <SectorIndustry code="352010" classificationType="GICS" level="1" focusLevel="Yes"
+                                primaryIndicator="Yes" bluematrixSectorID="559">
+                    <Name>Biotechnology</Name>
+                </SectorIndustry>
+                <Tag tagID="10081" code="">
+                    <Name>Denomination Tag</Name>
+                    <TagValue tagValueID="4" rank="1" code="">
+                        <Name>($M)</Name>
+                    </TagValue>
+                </Tag>
+                <Tag tagID="20" code="">
+                    <Name>Main Subject</Name>
+                    <TagValue tagValueID="3" rank="1" code="CU">
+                        <Name>Company Update</Name>
+                    </TagValue>
+                </Tag>
+                <Tag tagID="10" code="">
+                    <Name>Region</Name>
+                    <TagValue tagValueID="1" rank="1" code="">
+                        <Name>North America</Name>
+                    </TagValue>
+                </Tag>
+                <Tag tagID="10069" code="">
+                    <Name>Subject(s) for Email</Name>
+                    <TagValue tagValueID="5" rank="1" code="ER">
+                        <Name>Earnings Review</Name>
+                    </TagValue>
+                    <TagValue tagValueID="1" rank="1" code="AE">
+                        <Name>Adjusting Estimates</Name>
+                    </TagValue>
+                </Tag>
+            </ProductClassifications>
+        </Context>
+    </Product>
+    <InternalTag>
+        <Name>AccessType</Name>
+        <Value>Public</Value>
+    </InternalTag>
+</Research>

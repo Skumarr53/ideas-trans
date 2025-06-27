@@ -1,0 +1,541 @@
+{
+  "broker": {
+    "id": 25859,
+    "name": "Raymond James",
+    "encrypt": "d9fd5be7-8ea8-4dd7-abb7-f2d9c48468af"
+  },
+  "type": {
+    "id": 7269,
+    "name": "Industry Comment"
+  },
+  "authors": [
+    {
+      "id": 17551,
+      "firstName": "Jeremy",
+      "lastName": "McCrea",
+      "email": "jeremy.mccrea@raymondjames.ca"
+    },
+    {
+      "id": 68130,
+      "firstName": "Noor",
+      "lastName": "Hussain",
+      "email": "noor.hussain@raymondjames.ca"
+    }
+  ],
+  "issuers": [
+    {
+      "id": 98815,
+      "name": "Pipestone Energy Corp.",
+      "updated": 1548060778000,
+      "securities": [
+        {
+          "id": 269570,
+          "name": "Pipestone Energy",
+          "symbol": "PIPE.T",
+          "sedol": "BH42KD3",
+          "cusip": "724112107",
+          "isin": "CA09228A1049",
+          "bloomberg": "PIPE.T",
+          "ratingAction": "Reiterate",
+          "targetPriceAction": "Reiterate",
+          "updated": 1698093003000
+        }
+      ]
+    },
+    {
+      "id": 98766,
+      "name": "Crescent Point Energy Corp",
+      "updated": 1549541658000,
+      "securities": [
+        {
+          "id": 138117,
+          "name": "Crescent Point Energy Corp.",
+          "symbol": "CPG.T",
+          "sedol": "B67C8W8",
+          "cusip": "22576C101",
+          "isin": "CA22576C1014",
+          "bloomberg": "CPG.T",
+          "ratingAction": "Reiterate",
+          "targetPriceAction": "Reiterate",
+          "updated": 1712556000000
+        }
+      ]
+    },
+    {
+      "id": 62693,
+      "name": "Tamarack Valley Energy Ltd",
+      "updated": 1549627889000,
+      "securities": [
+        {
+          "id": 143173,
+          "name": "Tamarack Valley Energy Ltd.",
+          "symbol": "TVE.T",
+          "sedol": "B8J3TH5",
+          "cusip": "87505Y409",
+          "isin": "CA87505Y4094",
+          "bloomberg": "TVE.T",
+          "ratingAction": "Reiterate",
+          "targetPriceAction": "Reiterate",
+          "updated": 1707513266000
+        }
+      ]
+    },
+    {
+      "securities": [
+        {
+          "id": 432400,
+          "name": "Headwater Exploration Inc.",
+          "symbol": "HWX.T",
+          "sedol": "BLHDDW1",
+          "cusip": "422096107",
+          "isin": "CA4220961078",
+          "bloomberg": "HWX.T",
+          "ratingAction": "Reiterate",
+          "targetPriceAction": "Reiterate",
+          "updated": 1707513266000
+        }
+      ]
+    },
+    {
+      "securities": [
+        {
+          "id": 422431,
+          "name": "Topaz Energy Corp.",
+          "symbol": "TPZ.T",
+          "sedol": "BMV3Y21",
+          "cusip": "89055A203",
+          "isin": "CA89055A2039",
+          "bloomberg": "TPZ.T",
+          "ratingAction": "Reiterate",
+          "targetPriceAction": "Reiterate",
+          "updated": 1707513266000
+        }
+      ]
+    },
+    {
+      "id": 98771,
+      "name": "Advantage Oil & Gas Ltd.",
+      "updated": 1549541658000,
+      "securities": [
+        {
+          "id": 140960,
+          "name": "Advantage Energy Ltd.",
+          "symbol": "AAV.T",
+          "sedol": "BNW0WP7",
+          "cusip": "00791P107",
+          "isin": "CA00791P1071",
+          "bloomberg": "AAV.T",
+          "ratingAction": "Reiterate",
+          "targetPriceAction": "Reiterate",
+          "updated": 1709535605000
+        }
+      ]
+    },
+    {
+      "id": 103722,
+      "name": "Obsidian Energy Ltd",
+      "updated": 1551269599000,
+      "securities": [
+        {
+          "id": 150176,
+          "name": "Obsidian Energy Ltd.",
+          "symbol": "OBE.T",
+          "sedol": "BJV30F5",
+          "cusip": "674482203",
+          "isin": "CA6744822033",
+          "bloomberg": "OBE.T",
+          "ratingAction": "Reiterate",
+          "targetPriceAction": "Reiterate",
+          "updated": 1707513266000
+        }
+      ]
+    },
+    {
+      "id": 103856,
+      "name": "Peyto Exploration & Development Corp.",
+      "updated": 1549627889000,
+      "securities": [
+        {
+          "id": 140961,
+          "name": "Peyto Exploration & Development Corp.",
+          "symbol": "PEY.T",
+          "sedol": "B6775F5",
+          "cusip": "717046106",
+          "isin": "CA7170461064",
+          "bloomberg": "PEY.T",
+          "ratingAction": "Reiterate",
+          "targetPriceAction": "Reiterate",
+          "updated": 1713177978000
+        }
+      ]
+    },
+    {
+      "id": 56699,
+      "name": "Whitecap Resources Inc",
+      "updated": 1549887428000,
+      "securities": [
+        {
+          "id": 140966,
+          "name": "Whitecap Resources Inc.",
+          "symbol": "WCP.T",
+          "sedol": "B418WK4",
+          "cusip": "96467A200",
+          "isin": "CA96467A2002",
+          "bloomberg": "WCP.T",
+          "ratingAction": "Reiterate",
+          "targetPriceAction": "Reiterate",
+          "updated": 1707513266000
+        }
+      ]
+    },
+    {
+      "id": 111424,
+      "name": "Cardinal Energy Ltd",
+      "updated": 1549541658000,
+      "securities": [
+        {
+          "id": 146855,
+          "name": "Cardinal Energy Ltd.",
+          "symbol": "CJ.T",
+          "sedol": "BH8B735",
+          "cusip": "14150G400",
+          "isin": "CA14150G1292",
+          "bloomberg": "CJ.T",
+          "ratingAction": "Reiterate",
+          "targetPriceAction": "Reiterate",
+          "updated": 1707513266000
+        }
+      ]
+    },
+    {
+      "id": 60463,
+      "name": "Surge Energy Inc",
+      "updated": 1549627889000,
+      "securities": [
+        {
+          "id": 248549,
+          "name": "Surge Energy Inc.",
+          "symbol": "SGY.T",
+          "sedol": "BN7G0P6",
+          "cusip": "86880Y877",
+          "isin": "CA86880Y8779",
+          "bloomberg": "SGY.T",
+          "ratingAction": "Reiterate",
+          "targetPriceAction": "Reiterate",
+          "updated": 1707513266000
+        }
+      ]
+    },
+    {
+      "id": 69444,
+      "name": "Crew Energy Inc.",
+      "updated": 1549541658000,
+      "securities": [
+        {
+          "id": 140970,
+          "name": "Crew Energy Inc.",
+          "symbol": "CR.T",
+          "sedol": "2554721",
+          "cusip": "226533107",
+          "isin": "CA2265331074",
+          "bloomberg": "CR.T",
+          "ratingAction": "Reiterate",
+          "targetPriceAction": "Reiterate",
+          "updated": 1707513266000
+        }
+      ]
+    },
+    {
+      "id": 83364,
+      "name": "Return Energy Inc",
+      "updated": 1525889590000,
+      "securities": [
+        {
+          "id": 407215,
+          "name": "Spartan Delta Corp.",
+          "symbol": "SDE.T",
+          "sedol": "BMXNHL9",
+          "cusip": "84678A102",
+          "isin": "CA84678A1021",
+          "bloomberg": "SDE.T",
+          "ratingAction": "Reiterate",
+          "targetPriceAction": "Reiterate",
+          "updated": 1707513266000
+        }
+      ]
+    },
+    {
+      "id": 102619,
+      "name": "Vermilion Energy Inc",
+      "updated": 1549887428000,
+      "securities": [
+        {
+          "id": 140969,
+          "name": "Vermilion Energy Inc.",
+          "symbol": "VET.T",
+          "sedol": "B607XS1",
+          "cusip": "923725105",
+          "isin": "CA9237251058",
+          "bloomberg": "VET.T",
+          "ratingAction": "Reiterate",
+          "targetPriceAction": "Reiterate",
+          "updated": 1707513266000
+        }
+      ]
+    },
+    {
+      "id": 103845,
+      "name": "ARC Resources Ltd",
+      "updated": 1549541658000,
+      "securities": [
+        {
+          "id": 140975,
+          "name": "ARC Resources Ltd.",
+          "symbol": "ARX.T",
+          "sedol": "B6463M8",
+          "cusip": "00208D408",
+          "isin": "CA00208D4084",
+          "bloomberg": "ARX.T",
+          "ratingAction": "Reiterate",
+          "targetPriceAction": "Reiterate",
+          "updated": 1715164977000
+        }
+      ]
+    },
+    {
+      "id": 38827,
+      "name": "PetroShale Inc",
+      "updated": 1549627889000,
+      "securities": [
+        {
+          "id": 479272,
+          "name": "Lucero Energy Corp.",
+          "symbol": "LOU.V",
+          "sedol": "BNYFPN9",
+          "cusip": "54947L106",
+          "isin": "CA54947L1067",
+          "bloomberg": "LOU.V",
+          "ratingAction": "Reiterate",
+          "targetPriceAction": "Reiterate",
+          "updated": 1707513266000
+        }
+      ]
+    },
+    {
+      "id": 70619,
+      "name": "Birchcliff Energy Ltd",
+      "updated": 1549541658000,
+      "securities": [
+        {
+          "id": 140978,
+          "name": "Birchcliff Energy Ltd.",
+          "symbol": "BIR.T",
+          "sedol": "B0B55N1",
+          "cusip": "090697103",
+          "isin": "CA0906951078",
+          "bloomberg": "BIR.T",
+          "ratingAction": "Reiterate",
+          "targetPriceAction": "Reiterate",
+          "updated": 1707513266000
+        }
+      ]
+    },
+    {
+      "id": 96931,
+      "name": "Bonterra Energy Corp.",
+      "updated": 1549541658000,
+      "securities": [
+        {
+          "id": 140979,
+          "name": "Bonterra Energy Corp.",
+          "symbol": "BNE.T",
+          "sedol": "B3K3G89",
+          "cusip": "098546104",
+          "isin": "CA0985461049",
+          "bloomberg": "BNE.T",
+          "ratingAction": "Reiterate",
+          "targetPriceAction": "Reiterate",
+          "updated": 1707513266000
+        }
+      ]
+    },
+    {
+      "id": 109643,
+      "name": "Kelt Exploration Ltd",
+      "updated": 1551204822000,
+      "securities": [
+        {
+          "id": 140982,
+          "name": "Kelt Exploration Ltd.",
+          "symbol": "KEL.T",
+          "sedol": "B9KF5Q8",
+          "cusip": "488295106",
+          "isin": "CA4882951060",
+          "bloomberg": "KEL.T",
+          "ratingAction": "Reiterate",
+          "targetPriceAction": "Reiterate",
+          "updated": 1707513266000
+        }
+      ]
+    },
+    {
+      "id": 67782,
+      "name": "Nuvista Energy Ltd.",
+      "updated": 1551269599000,
+      "securities": [
+        {
+          "id": 140983,
+          "name": "NuVista Energy Ltd.",
+          "symbol": "NVA.T",
+          "sedol": "2901167",
+          "cusip": "67072Q104",
+          "isin": "CA67072Q1046",
+          "bloomberg": "NVA.T",
+          "ratingAction": "Reiterate",
+          "targetPriceAction": "Reiterate",
+          "updated": 1707513266000
+        }
+      ]
+    },
+    {
+      "id": 103857,
+      "name": "Freehold Royalties Ltd",
+      "updated": 1549541658000,
+      "securities": [
+        {
+          "id": 140981,
+          "name": "Freehold Royalties Ltd.",
+          "symbol": "FRU.T",
+          "sedol": "B3SJKB0",
+          "cusip": "356500108",
+          "isin": "CA3565001086",
+          "bloomberg": "FRU.T",
+          "ratingAction": "Reiterate",
+          "targetPriceAction": "Reiterate",
+          "updated": 1707513266000
+        }
+      ]
+    },
+    {
+      "id": 40277,
+      "name": "Paramount Resources Ltd.",
+      "updated": 1551356276000,
+      "securities": [
+        {
+          "id": 140985,
+          "name": "Paramount Resources Ltd.",
+          "symbol": "POU.T",
+          "sedol": "B073FP1",
+          "cusip": "699320206",
+          "isin": "CA6993201079",
+          "bloomberg": "POU.T",
+          "ratingAction": "Reiterate",
+          "targetPriceAction": "Reiterate",
+          "updated": 1707513266000
+        }
+      ]
+    },
+    {
+      "id": 103313,
+      "name": "Tourmaline Oil Corp",
+      "updated": 1549627889000,
+      "securities": [
+        {
+          "id": 140990,
+          "name": "Tourmaline Oil Corp.",
+          "symbol": "TOU.T",
+          "sedol": "B3QJ0H8",
+          "cusip": "89156V106",
+          "isin": "CA89156V1067",
+          "bloomberg": "TOU.T",
+          "ratingAction": "Reiterate",
+          "targetPriceAction": "Reiterate",
+          "updated": 1716464365000
+        }
+      ]
+    },
+    {
+      "id": 38929,
+      "name": "Yangarra Resources Ltd",
+      "updated": 1549887428000,
+      "securities": [
+        {
+          "id": 144639,
+          "name": "Yangarra Resources Ltd.",
+          "symbol": "YGR.T",
+          "sedol": "BN45959",
+          "cusip": "98474P501",
+          "isin": "CA05473M1086",
+          "bloomberg": "YGR.T",
+          "ratingAction": "Reiterate",
+          "targetPriceAction": "Reiterate",
+          "updated": 1707513266000
+        }
+      ]
+    },
+    {
+      "id": 112692,
+      "name": "PrairieSky Royalty Ltd",
+      "updated": 1551356276000,
+      "securities": [
+        {
+          "id": 140988,
+          "name": "PrairieSky Royalty Ltd.",
+          "symbol": "PSK.T",
+          "sedol": "BN320L4",
+          "cusip": "739721108",
+          "isin": "CA7397211086",
+          "bloomberg": "PSK.T",
+          "ratingAction": "Reiterate",
+          "targetPriceAction": "Reiterate",
+          "updated": 1707513266000
+        }
+      ]
+    }
+  ],
+  "industries": [
+    {
+      "id": 468,
+      "gics": 10,
+      "name": "Energy",
+      "updated": 1717599772000
+    },
+    {
+      "id": 907,
+      "gics": 10102020,
+      "name": "Oil & Gas Exploration & Production",
+      "updated": 1707513266000
+    },
+    {
+      "id": 910,
+      "gics": 10102020,
+      "name": "Oil & Gas Exploration & Production",
+      "updated": 1707513266000
+    }
+  ],
+  "brokerTags": [],
+  "id": 12101945,
+  "brokerDocId": 234143,
+  "encrypt": "5627afe1-4fe2-42e3-93da-e1642f4264ee",
+  "title": "Intermediate Oil & Gas Producers | Who Had the Best Reserve Report? 5 Items to Take Away ",
+  "titleFormatted": "Intermediate Oil &amp; Gas Producers | Who Had the Best Reserve Report? 5 Items to Take Away",
+  "synopsis": "Reserve reports can provide a great deal of future information that is not readily foreseen with cashflow approaches. Although there is a lot of data in AIFs, a ‘triangulation’ of different metrics is still needed to determine which entity is likely to be the most profitable, have higher growth, and is the most ‘valuable’. Through our note, we look at 5 different items as ‘food for thought’ as it relates to reserve data and where biases may be coming in the future. 1) Valuation We highlight how ...",
+  "publishTimestamp": 1680778487000,
+  "updatedTimestamp": 1680779827000,
+  "htmlLink": "https://research-exp.bluematrix.com/docs/html/d9fd5be7-8ea8-4dd7-abb7-f2d9c48468af/5627afe1-4fe2-42e3-93da-e1642f4264ee",
+  "rixmlLink": "https://research-exp.bluematrix.com/docs/rixml/d9fd5be7-8ea8-4dd7-abb7-f2d9c48468af/5627afe1-4fe2-42e3-93da-e1642f4264ee",
+  "pdfLink": "https://research-exp.bluematrix.com/docs/pdf/d9fd5be7-8ea8-4dd7-abb7-f2d9c48468af/5627afe1-4fe2-42e3-93da-e1642f4264ee",
+  "externalLink": false,
+  "pdfLengthNumPages": 24,
+  "assetClasses": [
+    "Equity"
+  ],
+  "assetTypes": [
+    "Stock"
+  ],
+  "countries": [
+    "CA"
+  ],
+  "productCategory": "Report",
+  "focus": "SectorIndustry"
+}

@@ -1,0 +1,73 @@
+{
+  "broker": {
+    "id": 25203,
+    "name": "Cantor Fitzgerald & Co., Research Division",
+    "encrypt": "c47ccf5c-b413-4905-95b8-7eb1df8e81dc"
+  },
+  "type": {
+    "id": 7334,
+    "name": "Company Note"
+  },
+  "authors": [
+    {
+      "id": 38475,
+      "firstName": "Li",
+      "lastName": "Watsek",
+      "email": "Li.Watsek@cantor.com"
+    },
+    {
+      "id": 75248,
+      "firstName": "Rosemary",
+      "lastName": "Li",
+      "email": "Rosemary.Li@cantor.com"
+    }
+  ],
+  "issuers": [
+    {
+      "securities": [
+        {
+          "id": 518545,
+          "name": "Oncternal Therapeutics, Inc.",
+          "symbol": "ONCT",
+          "bloomberg": "ONCT",
+          "ratingAction": "Reiterate",
+          "targetPriceAction": "Reiterate",
+          "updated": 1697495400000
+        }
+      ]
+    }
+  ],
+  "industries": [
+    {
+      "id": 57448,
+      "gics": 352010,
+      "name": "Biotechnology",
+      "updated": 1717583736000
+    }
+  ],
+  "brokerTags": [],
+  "id": 12003785,
+  "brokerDocId": 79910,
+  "encrypt": "d7a43211-fd4f-406f-bbce-28e018884d3c",
+  "title": "4Q Update: ROR1 CAR-T On-Track to Drive the Data Car This Year",
+  "titleFormatted": "4Q Update: ROR1 CAR-T On-Track to Drive the Data Car This Year",
+  "synopsis": "Investment Summary: We reiterate our Overweight rating and 12-month price target of $4. Today (3/9), Oncternal released 4Q22 financial results and held a company call. We view today's update as incremental, with key milestones remaining on-track. We see this year as an execution year for the Ph3 ZILO-301 in R/R MCL (relapsed/refractory mantle cell lymphoma). ONCT-808 (ROR1 CAR-T) will drive the data flow in aggressive B-cell lymphoma later this year, and the third program, ONCT-534, is guided to...",
+  "publishTimestamp": 1678410221000,
+  "updatedTimestamp": 1678410310000,
+  "htmlLink": "https://research-exp.bluematrix.com/docs/html/c47ccf5c-b413-4905-95b8-7eb1df8e81dc/d7a43211-fd4f-406f-bbce-28e018884d3c",
+  "rixmlLink": "https://research-exp.bluematrix.com/docs/rixml/c47ccf5c-b413-4905-95b8-7eb1df8e81dc/d7a43211-fd4f-406f-bbce-28e018884d3c",
+  "pdfLink": "https://research-exp.bluematrix.com/docs/pdf/c47ccf5c-b413-4905-95b8-7eb1df8e81dc/d7a43211-fd4f-406f-bbce-28e018884d3c",
+  "externalLink": false,
+  "pdfLengthNumPages": 7,
+  "assetClasses": [
+    "Equity"
+  ],
+  "assetTypes": [
+    "Stock"
+  ],
+  "countries": [
+    "US"
+  ],
+  "productCategory": "Report",
+  "focus": "Issuer"
+}
