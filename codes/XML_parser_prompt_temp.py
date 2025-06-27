@@ -41,3 +41,152 @@ Example Output:
 }
 
 Now process the provided inputs and return ONLY the dictiona
+
+
+-------------------
+
+import xml.etree.ElementTree as ET
+def extract_xml_data(xml_content, paths):
+    """
+    Extracts data from XML content based on the provided paths.
+    Args:
+        xml_content (str): The XML content as a string.
+        paths (dict): A dictionary mapping metadata fields to their XML paths.
+    Returns:
+        dict: A dictionary containing the extracted data.
+    """
+    # Parse the XML content
+    root = ET.fromstring(xml_content)
+    # Dictionary to store the extracted data
+    extracted_data = {}
+    # Iterate through the paths and extract the data
+    for field, path in paths.items():
+        try:
+            # Handle attributes separately
+            if "@" in path:
+                # Split the path into the element path and the attribute name
+                element_path, attribute = path.split("@")
+                element = root.find(element_path)
+                if element is not None:
+                    extracted_data[field] = element.get(attribute)
+            else:
+                # Extract the text value of the element
+                element = root.find(path)
+                if element is not None:
+                    extracted_data[field] = element.text
+        except Exception as e:
+            print(f"Error extracting {field}: {e}")
+            extracted_data[field] = None
+    return extracted_data
+# Example XML content
+xml_content = """
+<Research researchID="12345" language="en" createDateTime="2023-10-01T12:00:00Z">
+    <Product productID="P001" eventIndicator="true">
+        <StatusInfo statusType="Published" statusDateTime="2023-10-01T12:30:00Z">
+            <Version>1.0</Version>
+        </StatusInfo>
+        <Source>
+            <Organization>
+                <OrganizationID idType="LEI">987654321</OrganizationID>
+                <OrganizationName>Research Org</OrganizationName>
+                <PersonGroup>
+                    <PersonGroupMember>
+                        <Person>
+                            <DisplayName>John Doe</DisplayName>
+                            <ContactInfo>
+                                <Email>john.doe@example.com</Email>
+                            </ContactInfo>
+                        </Person>
+                    </PersonGroupMember>
+                </PersonGroup>
+            </Organization>
+        </Source>
+        <Content>
+            <Title>Sample Research Report</Title>
+            <Abstract>This is a sample abstract.</Abstract>
+            <Synopsis>This is a sample synopsis.</Synopsis>
+            <Resource sizeInBytes="1024" language="en">
+                <Name>report.pdf</Name>
+                <MIMEType>application/pdf</MIMEType>
+                <Length>10</Length>
+            </Resource>
+        </Content>
+    </Product>
+    <Context>
+        <IssuerDetails>
+            <Issuer primaryIndicator="true" issuerType="Corporate" domicileCountryCode="US">
+                <IssuerName>
+                    <NameValue>Sample Issuer</NameValue>
+                </IssuerName>
+                <SecurityDetails>
+                    <Security>
+                        <SecurityID idType="ISIN" idValue="US1234567890">
+                            <TradingExchange>NYSE</TradingExchange>
+                        </SecurityID>
+                        <SecurityFinancials securityFinancialsType="TargetPrice">
+                            <FinancialValue>100.00</FinancialValue>
+                            <Currency>USD</Currency>
+                        </SecurityFinancials>
+                        <Rating rating="Buy">
+                            <PublisherDefinedValue>5</PublisherDefinedValue>
+                        </Rating>
+                        <AssetClass assetClass="Equity" />
+                        <AssetType assetType="Common Stock" />
+                        <SecurityType securityType="Stock" />
+                    </Security>
+                </SecurityDetails>
+            </Issuer>
+        </IssuerDetails>
+        <ProductDetails publicationDateTime="2023-10-01T12:35:00Z">
+            <ProductCategory productCategory="Research" />
+            <ProductFocus focus="Equity" />
+        </ProductDetails>
+    </Context>
+</Research>
+"""
+# Paths dictionary
+paths = {
+    "research_id": "Research/@researchID",
+    "research_language": "Research/@language",
+    "research_create_datetime": "Research/@createDateTime",
+    "product_id": "Research/Product/@productID",
+    "event_indicator": "Research/Product/@eventIndicator",
+    "status_type": "Research/Product/StatusInfo/@statusType",
+    "status_datetime": "Research/Product/StatusInfo/@statusDateTime",
+    "version": "Research/Product/StatusInfo/Version",
+    "organization_id_type": "Research/Product/Source/Organization/OrganizationID/@idType",
+    "organization_id": "Research/Product/Source/Organization/OrganizationID",
+    "organization_name": "Research/Product/Source/Organization/OrganizationName",
+    "analyst_display_name": "Research/Product/Source/Organization/PersonGroup/PersonGroupMember/Person/DisplayName",
+    "analyst_email": "Research/Product/Source/Organization/PersonGroup/PersonGroupMember/Person/ContactInfo/Email",
+    "report_title": "Research/Product/Content/Title",
+    "report_abstract": "Research/Product/Content/Abstract",
+    "report_synopsis": "Research/Product/Content/Synopsis",
+    "resource_name": "Research/Product/Content/Resource/Name",
+    "resource_size_bytes": "Research/Product/Content/Resource/@sizeInBytes",
+    "resource_mime_type": "Research/Product/Content/Resource/MIMEType",
+    "resource_language": "Research/Product/Content/Resource/@language",
+    "document_length_pages": "Research/Product/Content/Resource/Length",
+    "issuer_primary_indicator": "Research/Context/IssuerDetails/Issuer/@primaryIndicator",
+    "issuer_type": "Research/Context/IssuerDetails/Issuer/@issuerType",
+    "issuer_domicile_country": "Research/Context/IssuerDetails/Issuer/@domicileCountryCode",
+    "issuer_name": "Research/Context/IssuerDetails/Issuer/IssuerName/NameValue",
+    "security_id_type": "Research/Context/IssuerDetails/Issuer/SecurityDetails/Security/SecurityID/@idType",
+    "security_id_value": "Research/Context/IssuerDetails/Issuer/SecurityDetails/Security/SecurityID/@idValue",
+    "trading_exchange": "Research/Context/IssuerDetails/Issuer/SecurityDetails/Security/SecurityID/TradingExchange",
+    "target_price_value": "Research/Context/IssuerDetails/Issuer/SecurityDetails/Security/SecurityFinancials[@securityFinancialsType='TargetPrice']/FinancialValue",
+    "target_price_currency": "Research/Context/IssuerDetails/Issuer/SecurityDetails/Security/SecurityFinancials[@securityFinancialsType='TargetPrice']/Currency",
+    "rating": "Research/Context/IssuerDetails/Issuer/SecurityDetails/Security/Rating/@rating",
+    "rating_value": "Research/Context/IssuerDetails/Issuer/SecurityDetails/Security/Rating/PublisherDefinedValue",
+    "asset_class": "Research/Context/IssuerDetails/Issuer/SecurityDetails/Security/AssetClass/@assetClass",
+    "asset_type": "Research/Context/IssuerDetails/Issuer/SecurityDetails/Security/AssetType/@assetType",
+    "security_type": "Research/Context/IssuerDetails/Issuer/SecurityDetails/Security/SecurityType/@securityType",
+    "product_publication_datetime": "Research/Context/ProductDetails/@publicationDateTime",
+    "product_category": "Research/Context/ProductDetails/ProductCategory/@productCategory",
+    "product_focus": "Research/Context/ProductDetails/ProductFocus/@focus"
+}
+# Extract data from the XML content
+extracted_data = extract_xml_data(xml_content, paths)
+# Print the extracted data
+for field, value in extracted_data.items():
+    print(f"{field}: {value}")
