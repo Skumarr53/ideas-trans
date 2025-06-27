@@ -132,3 +132,61 @@ def parse_directory(directory: str) -> List[Dict[str, Any]]:
 # directory = '/mnt/data/'
 # results = parse_directory(directory)
 # import json; print(json.dumps(results, indent=2))
+
+
+--------------
+
+import pandas as pd
+from typing import List, Dict, Any, Optional
+
+def format_common_info(doc: Dict[str, Any]) -> Dict[str, Any]:
+    """Extract and format the common info shared across issuers in a doc."""
+    return {
+        'filename': doc.get('filename'),
+        'publication_date': doc.get('publication_date'),
+        'broker_name': doc.get('broker_name'),
+        'analysts': ', '.join([a['name'] for a in doc.get('analysts', [])]),
+        'product_asset_class': doc.get('product_asset_class'),
+        'report_types': ', '.join(doc.get('report_types', [])),
+        'event_types': ', '.join(doc.get('event_types', [])),
+    }
+
+def format_issuer_row(
+    common_info: Dict[str, Any],
+    issuer: Optional[Dict[str, Any]] = None,
+    ticker: Optional[Dict[str, Any]] = None
+) -> Dict[str, Any]:
+    """Combine common info, issuer, and ticker info into one row."""
+    row = common_info.copy()
+    row.update({
+        'issuer_name': issuer.get('issuer_name') if issuer else None,
+        'asset_class': issuer.get('asset_class') if issuer else None,
+        'ticker_id_type': ticker.get('id_type') if ticker else None,
+        'ticker_id_value': ticker.get('id_value') if ticker else None,
+        'ticker_exchange': ticker.get('exchange') if ticker else None,
+        'price_target_value': (issuer.get('price_target') or {}).get('value') if issuer else None,
+        'price_target_currency': (issuer.get('price_target') or {}).get('currency') if issuer else None,
+        'rating': issuer.get('rating') if issuer else None,
+    })
+    return row
+
+def flatten_issuer_rows(parsed_docs: List[Dict[str, Any]]) -> pd.DataFrame:
+    """
+    Returns a DataFrame with one row per issuer-ticker per document.
+    """
+    rows = []
+    for doc in parsed_docs:
+        common_info = format_common_info(doc)
+        issuers = doc.get('issuers', [])
+        if not issuers:
+            # For macro/no-issuer reports
+            rows.append(format_issuer_row(common_info))
+            continue
+        for issuer in issuers:
+            tickers = issuer.get('tickers', []) or [{}]  # At least one row per issuer
+            for ticker in tickers:
+                rows.append(format_issuer_row(common_info, issuer, ticker))
+    return pd.DataFrame(rows)
+
+# Example usage:
+# df = flatten_issuer_rows(parsed_docs)
