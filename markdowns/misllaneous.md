@@ -1,6 +1,1 @@
-```json
-{
-  "title": "article > header > title",
-  "author": "article > author@name",
-  …
-}
+I want you to write robust code to extract metadata related to publication date, broker name, analyst names, tickers, asset class (equities, fixed income or macro), price target, report type, event type, rating from xml. I am sharing 3 sample xmls files for reference. based on design the outpuut structure based type info avaibale.
