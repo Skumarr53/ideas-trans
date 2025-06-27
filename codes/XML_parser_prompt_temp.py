@@ -1,107 +1,43 @@
-### Prompt Template for XML Metadata Tag and Attribute Extraction
-
-**Purpose:** Extract precise XML tags and attribute paths corresponding to user-requested metadata details from given XML content. These extracted paths should be reusable for similar XML structures.
-
 **Prompt Template:**
 
----
+Task: XML Metadata Path Extraction for Bulk Processing
 
-You are provided with XML content and a user's query specifying certain metadata they wish to extract. Your task is:
+Objective:
+Analyze the provided XML content to identify all element tags and attribute paths that contain metadata relevant to the user's query. Generate a dictionary where each key is a metadata field name and each value is its full hierarchical path in XPath-like format (without positional indices). These paths will be reused programmatically for extracting information from bulk XML files.
 
-1. **Carefully read and analyze the provided XML content.**
-2. **Identify and clearly list the exact XML tags and attributes, including their full hierarchical paths,** that correspond directly to the requested metadata details.
-3. **Present the extracted information in a structured and reusable format**, clearly distinguishing tags from attributes.
-
-**User Query Example:**
-
-```
-"Identify tags and attributes paths for extracting: publication date, analyst name, ticker symbol, asset class, and price target."
-```
-
-**XML Content Example:**
-
-```xml
-<ResearchReport>
-    <Header>
-        <PublicationDate>2024-06-27</PublicationDate>
-        <Broker name="Goldman Sachs" />
-    </Header>
-    <Body>
-        <Analyst name="John Doe" />
-        <Issuer>
-            <Ticker>APPL</Ticker>
-            <AssetClass>Equities</AssetClass>
-            <PriceTarget currency="USD">180</PriceTarget>
-        </Issuer>
-    </Body>
-</ResearchReport>
-```
-
-**Desired Response Format:**
-
-```markdown
-### Tags:
-- Publication Date: `/ResearchReport/Header/PublicationDate`
-- Ticker Symbol: `/ResearchReport/Body/Issuer/Ticker`
-- Asset Class: `/ResearchReport/Body/Issuer/AssetClass`
-
-### Attributes:
-- Broker Name: `/ResearchReport/Header/Broker[@name]`
-- Analyst Name: `/ResearchReport/Body/Analyst[@name]`
-- Price Target (Currency): `/ResearchReport/Body/Issuer/PriceTarget[@currency]`
-```
-
-Ensure your response clearly separates tags and attributes and uses XPath-style notation for accuracy and ease of reuse.
+Inputs:
+1. User Query: "We will need to parse RIXML file to convert the labels into structured tables. Example columns include publication date, broker name, analyst names, tickers, asset class (equities, fixed income or macro), price target, report type, event type, rating
 
 
+Processing Instructions:
+1. Understand the metadata requirements from the user query
+2. Analyze the XML structure thoroughly, including nested elements
+3. Identify all possible paths that could contain relevant metadata
+4. For attributes, use the format `parent_tag/@attribute_name`
+5. Exclude any positional indices (e.g., use `/root/item` instead of `/root/item[1]`)
+6. Include only paths that directly contain metadata values (not structural elements)
+7. For repeated elements with the same metadata role, use the generic path without indices
+8. Group related metadata fields when appropriate
 
-----------------
+Output Requirements:
+- Return ONLY a Python dictionary in this exact format:
+{
+    "metadata_field1": "full/path/to/element_or_attribute",
+    "metadata_field2": "another/path/@attribute",
+    ...
+}
+- Dictionary keys should be descriptive field names derived from either:
+  a) The user query's terminology, OR
+  b) The XML element/attribute names if clearer
+- Ensure all paths are valid and complete from the root
+- Include all relevant metadata fields, not just the most obvious ones
 
-import xml.etree.ElementTree as ET
-from typing import Dict
+Example Output:
+{
+    "document_title": "book/metadata/title",
+    "publication_date": "book/metadata/pubdate",
+    "author_name": "book/metadata/creator/@fullname",
+    "isbn": "book/metadata/identifier[@type='isbn']"
+}
 
-def extract_metadata(xml_content: str) -> Dict[str, str]:
-    tree = ET.ElementTree(ET.fromstring(xml_content))
-    root = tree.getroot()
-
-    def get_text(path: str) -> str:
-        elem = root.find(path)
-        return elem.text.strip() if elem is not None and elem.text else None
-
-    def get_attribute(path: str, attr_name: str) -> str:
-        elem = root.find(path)
-        return elem.attrib.get(attr_name) if elem is not None else None
-
-    return {
-        # Tags
-        "Publication Date": get_text("Header/PublicationDate"),
-        "Ticker Symbol": get_text("Body/Issuer/Ticker"),
-        "Asset Class": get_text("Body/Issuer/AssetClass"),
-
-        # Attributes
-        "Broker Name": get_attribute("Header/Broker", "name"),
-        "Analyst Name": get_attribute("Body/Analyst", "name"),
-        "Price Target (Currency)": get_attribute("Body/Issuer/PriceTarget", "currency"),
-    }
-
-# Example usage:
-if __name__ == "__main__":
-    sample_xml = """
-    <ResearchReport>
-        <Header>
-            <PublicationDate>2024-06-27</PublicationDate>
-            <Broker name="Goldman Sachs" />
-        </Header>
-        <Body>
-            <Analyst name="John Doe" />
-            <Issuer>
-                <Ticker>APPL</Ticker>
-                <AssetClass>Equities</AssetClass>
-                <PriceTarget currency="USD">180</PriceTarget>
-            </Issuer>
-        </Body>
-    </ResearchReport>
-    """
-    result = extract_metadata(sample_xml)
-    for key, value in result.items():
-        print(f"{key}: {value}")
+Now process the provided inputs and return ONLY the dictiona
