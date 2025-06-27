@@ -1,192 +1,195 @@
-"""
-Robust XML extraction for sell-side research documents.
-- Designed for clarity, maintainability, and extensibility.
-- Supports RIXML-based research report samples.
-
-Extracts: publication date, broker name, analyst names, tickers, asset class, price target, report type, event type, and rating.
-"""
 import os
+import glob
+import pandas as pd
 import xml.etree.ElementTree as ET
-from typing import List, Dict, Any, Optional
-from glob import glob
+from collections import defaultdict
 
-def parse_analysts(org_elem) -> List[Dict[str, Any]]:
+def get_namespace(root):
+    # Extract XML namespace, e.g., '{http://www.rixml.org/2013/2/RIXML}'
+    if root.tag[0] == '{':
+        return root.tag[1:].split('}')[0]
+    return ''
+
+def find_first(elem, path, ns):
+    # Like elem.find(), but returns '' if not found
+    try:
+        if ns:
+            res = elem.find(path, namespaces={'ns': ns})
+        else:
+            res = elem.find(path)
+        return res if res is not None else None
+    except Exception:
+        return None
+
+def findall(elem, path, ns):
+    try:
+        if ns:
+            return elem.findall(path, namespaces={'ns': ns})
+        else:
+            return elem.findall(path)
+    except Exception:
+        return []
+
+def extract_analysts(source_elem, ns):
     analysts = []
-    ns = {'rixml': 'http://www.rixml.org/2005/3/RIXML'}
-    for pg in org_elem.findall('.//rixml:PersonGroupMember', ns):
-        person = pg.find('rixml:Person', ns)
-        if person is not None:
-            analysts.append({
-                'name': person.findtext('rixml:DisplayName', default='', namespaces=ns),
-                'job_title': person.findtext('rixml:JobTitle', default='', namespaces=ns),
-                'email': person.findtext('rixml:ContactInfo/rixml:Email', default='', namespaces=ns),
-            })
+    for person_group in findall(source_elem, ".//ns:PersonGroup", ns):
+        for member in findall(person_group, ".//ns:PersonGroupMember", ns):
+            person = find_first(member, ".//ns:Person", ns)
+            if person is not None:
+                analyst = {
+                    "analyst_display_name": (find_first(person, "ns:DisplayName", ns) or find_first(person, "DisplayName", ns) or '').text if find_first(person, "ns:DisplayName", ns) is not None or find_first(person, "DisplayName", ns) is not None else '',
+                    "analyst_email": '',
+                }
+                email_node = find_first(person, ".//ns:ContactInfo/ns:Email", ns) or find_first(person, ".//ContactInfo/Email", ns)
+                analyst["analyst_email"] = email_node.text if email_node is not None else ''
+                analysts.append(analyst)
     return analysts
 
-def parse_tickers(security_elem) -> List[Dict[str, Any]]:
-    tickers = []
-    ns = {'rixml': 'http://www.rixml.org/2005/3/RIXML'}
-    for secid in security_elem.findall('.//rixml:SecurityID', ns):
-        tickers.append({
-            'id_type': secid.attrib.get('idType', ''),
-            'id_value': secid.attrib.get('idValue', ''),
-            'exchange': secid.findtext('rixml:TradingExchange', default='', namespaces=ns)
-        })
-    return tickers
+def extract_issuer_info(issuer_elem, ns):
+    # Handles one Issuer node (can be called multiple times per file)
+    issuer = {
+        "issuer_name": '',
+        "ticker": '',
+        "asset_class": '',
+        "price_target": '',
+        "currency": '',
+        "rating": '',
+        "rating_action": '',
+        "coverage_action": '',
+        "target_price_action": '',
+        "isin": '',
+        "cusip": '',
+        "bloomberg": '',
+    }
+    # Name
+    name_node = find_first(issuer_elem, ".//ns:IssuerName/ns:NameValue", ns) or find_first(issuer_elem, ".//IssuerName/NameValue", ns)
+    if name_node is not None:
+        issuer["issuer_name"] = name_node.text
+    # Security Details
+    for security in findall(issuer_elem, ".//ns:SecurityDetails/ns:Security", ns):
+        # Ticker: Try to get any recognized id
+        for secid in findall(security, "ns:SecurityID", ns):
+            idtype = secid.attrib.get('idType', '').upper()
+            val = secid.attrib.get('idValue', '')
+            if not issuer["ticker"] and idtype in ("BLOOMBERG", "RIC", "PUBLISHERDEFINED"):
+                issuer["ticker"] = val
+            if idtype == "ISIN":
+                issuer["isin"] = val
+            if idtype == "CUSIP":
+                issuer["cusip"] = val
+            if idtype == "BLOOMBERG":
+                issuer["bloomberg"] = val
+        # Asset class
+        ac_node = find_first(security, "ns:AssetClass", ns) or find_first(security, "AssetClass", ns)
+        if ac_node is not None and 'assetClass' in ac_node.attrib:
+            issuer["asset_class"] = ac_node.attrib['assetClass']
+        # Price target
+        for sf in findall(security, "ns:SecurityFinancials", ns) + findall(security, "SecurityFinancials", ns):
+            if sf.attrib.get('securityFinancialsType', '').lower() == "targetprice":
+                pt_val = find_first(sf, "ns:FinancialValue", ns) or find_first(sf, "FinancialValue", ns)
+                if pt_val is not None:
+                    issuer["price_target"] = pt_val.text
+                cur = find_first(sf, "ns:Currency", ns) or find_first(sf, "Currency", ns)
+                if cur is not None:
+                    issuer["currency"] = cur.text
+        # Rating (publisher defined)
+        for rating in findall(security, "ns:Rating", ns) + findall(security, "Rating", ns):
+            pdv = find_first(rating, "ns:PublisherDefinedValue", ns) or find_first(rating, "PublisherDefinedValue", ns)
+            if pdv is not None and pdv.text:
+                issuer["rating"] = pdv.text
+                issuer["rating_action"] = rating.attrib.get('ratingAction', '')
+            elif 'rating' in rating.attrib:
+                issuer["rating"] = rating.attrib['rating']
+                issuer["rating_action"] = rating.attrib.get('ratingAction', '')
+        # Coverage/target price actions
+        if 'coverageAction' in security.attrib:
+            issuer["coverage_action"] = security.attrib['coverageAction']
+        if 'targetPriceAction' in security.attrib:
+            issuer["target_price_action"] = security.attrib['targetPriceAction']
+    return issuer
 
-def parse_price_target(security_elem) -> Optional[Dict[str, Any]]:
-    ns = {'rixml': 'http://www.rixml.org/2005/3/RIXML'}
-    for fin in security_elem.findall('.//rixml:SecurityFinancials', ns):
-        if fin.attrib.get('securityFinancialsType') == 'TargetPrice' and fin.attrib.get('priorCurrent') == 'Current':
-            return {
-                'currency': fin.findtext('rixml:Currency', default='', namespaces=ns),
-                'value': fin.findtext('rixml:FinancialValue', default='', namespaces=ns)
-            }
-    return None
+def extract_report_metadata(root, ns):
+    # General report-level info (same for all issuers in this file)
+    meta = defaultdict(str)
+    # Publication date
+    pub_date = ''
+    pd_node = find_first(root, ".//ns:ProductDetails", ns)
+    if pd_node is not None:
+        pub_date = pd_node.attrib.get('publicationDateTime', '')
+    else:
+        # Fallback for older schema
+        pd_node = find_first(root, ".//ProductDetails", ns)
+        if pd_node is not None:
+            pub_date = pd_node.attrib.get('publicationDateTime', '')
+    meta['publication_date'] = pub_date
+    # Broker info
+    source_node = find_first(root, ".//ns:Source", ns) or find_first(root, ".//Source", ns)
+    if source_node is not None:
+        org_node = find_first(source_node, ".//ns:Organization", ns) or find_first(source_node, ".//Organization", ns)
+        if org_node is not None:
+            broker = find_first(org_node, "ns:OrganizationName", ns) or find_first(org_node, "OrganizationName", ns)
+            if broker is not None:
+                meta['broker_name'] = broker.text
+    # Report title/type
+    content_node = find_first(root, ".//ns:Content", ns) or find_first(root, ".//Content", ns)
+    if content_node is not None:
+        title = find_first(content_node, "ns:Title", ns) or find_first(content_node, "Title", ns)
+        if title is not None:
+            meta['report_title'] = title.text
+    # Report type/classification
+    context_node = find_first(root, ".//ns:Context", ns) or find_first(root, ".//Context", ns)
+    if context_node is not None:
+        # Report type (e.g., Company Note, Update)
+        prod_node = find_first(context_node, ".//ns:ProductDetails", ns) or find_first(context_node, ".//ProductDetails", ns)
+        if prod_node is not None:
+            meta['report_type'] = prod_node.findtext("ns:ProductName", namespaces={'ns': ns}) or prod_node.findtext("ProductName")
+        # Event type
+        classif_node = find_first(context_node, ".//ns:ProductClassifications", ns) or find_first(context_node, ".//ProductClassifications", ns)
+        if classif_node is not None:
+            for subj in findall(classif_node, "ns:Subject", ns) + findall(classif_node, "Subject", ns):
+                if 'publisherDefinedValue' in subj.attrib:
+                    meta['event_type'] = subj.attrib['publisherDefinedValue']
+    return dict(meta)
 
-def parse_rating(security_elem) -> Optional[str]:
-    ns = {'rixml': 'http://www.rixml.org/2005/3/RIXML'}
-    for rating in security_elem.findall('.//rixml:Rating', ns):
-        if rating.attrib.get('priorCurrent') == 'Current':
-            return rating.findtext('rixml:PublisherDefinedValue', default='', namespaces=ns)
-    return None
-
-def parse_asset_class(security_elem) -> Optional[str]:
-    ns = {'rixml': 'http://www.rixml.org/2005/3/RIXML'}
-    ac = security_elem.find('.//rixml:AssetClass', ns)
-    if ac is not None:
-        return ac.attrib.get('assetClass', '')
-    return None
-
-def extract_xml_info(xml_path: str) -> Dict[str, Any]:
-    ns = {'rixml': 'http://www.rixml.org/2005/3/RIXML'}
+def extract_all_from_file(xml_path):
+    # Main extraction for one XML file
     tree = ET.parse(xml_path)
     root = tree.getroot()
-    product = root.find('.//rixml:Product', ns)
-    context = root.find('.//rixml:Context', ns)
-    data = {}
+    ns = get_namespace(root)
+    ns = ns if ns else None
 
-    # Publication date
-    pub_elem = product.find('.//rixml:ProductDetails', ns)
-    data['publication_date'] = pub_elem.attrib.get('publicationDateTime') if pub_elem is not None else None
+    report_meta = extract_report_metadata(root, ns)
+    source_node = find_first(root, ".//ns:Source", ns) or find_first(root, ".//Source", ns)
+    analysts = extract_analysts(source_node, ns) if source_node is not None else []
+    # Multiple issuers per file
+    context_node = find_first(root, ".//ns:Context", ns) or find_first(root, ".//Context", ns)
+    issuer_details_node = find_first(context_node, ".//ns:IssuerDetails", ns) or find_first(context_node, ".//IssuerDetails", ns)
+    if issuer_details_node is None:
+        issuer_details_node = find_first(root, ".//ns:IssuerDetails", ns) or find_first(root, ".//IssuerDetails", ns)
+    all_issuer_rows = []
+    for issuer in findall(issuer_details_node, ".//ns:Issuer", ns) + findall(issuer_details_node, ".//Issuer", ns):
+        issuer_info = extract_issuer_info(issuer, ns)
+        row = {}
+        row.update(report_meta)
+        row['filename'] = os.path.basename(xml_path)
+        # Analyst info: collapse to ; separated (could extend to column per analyst)
+        row['analysts'] = "; ".join(
+            ["{} <{}>".format(a['analyst_display_name'], a['analyst_email']) for a in analysts if a['analyst_display_name']]
+        )
+        row.update(issuer_info)
+        all_issuer_rows.append(row)
+    return all_issuer_rows
 
-    # Broker name
-    org = product.find('.//rixml:Source/rixml:Organization[@primaryIndicator="Yes"]', ns)
-    data['broker_name'] = org.findtext('rixml:OrganizationName', default='', namespaces=ns) if org is not None else None
-
-    # Analysts
-    data['analysts'] = parse_analysts(org) if org is not None else []
-
-    # Tickers/Identifiers (all issuers)
-    data['issuers'] = []
-    if context is not None:
-        for issuer in context.findall('.//rixml:Issuer', ns):
-            issuer_name = issuer.findtext('rixml:IssuerName/rixml:NameValue', default='', namespaces=ns)
-            securities = issuer.findall('.//rixml:SecurityDetails/rixml:Security', ns)
-            for sec in securities:
-                entry = {
-                    'issuer_name': issuer_name,
-                    'tickers': parse_tickers(sec),
-                    'asset_class': parse_asset_class(sec),
-                    'price_target': parse_price_target(sec),
-                    'rating': parse_rating(sec)
-                }
-                data['issuers'].append(entry)
-
-    # Asset class (product-level if available)
-    ac = product.find('.//rixml:AssetClass', ns)
-    data['product_asset_class'] = ac.attrib.get('assetClass', '') if ac is not None else None
-
-    # Report type & event type (from ProductClassifications/Subject)
-    classifications = product.find('.//rixml:ProductClassifications', ns)
-    data['report_types'] = []
-    data['event_types'] = []
-    if classifications is not None:
-        for subj in classifications.findall('.//rixml:Subject', ns):
-            publisher_val = subj.attrib.get('publisherDefinedValue', '')
-            if publisher_val:
-                if 'event' in publisher_val.lower():
-                    data['event_types'].append(publisher_val)
-                else:
-                    data['report_types'].append(publisher_val)
-        for discipline in classifications.findall('.//rixml:Discipline', ns):
-            val = discipline.attrib.get('disciplineType', '')
-            if val:
-                data['report_types'].append(val)
-    data['report_types'] = list(set(data['report_types']))
-    data['event_types'] = list(set(data['event_types']))
-    return data
-
-def parse_directory(directory: str) -> List[Dict[str, Any]]:
-    results = []
-    for path in glob(os.path.join(directory, '*.xml')):
+def process_folder(xml_folder):
+    all_rows = []
+    for xml_file in glob.glob(os.path.join(xml_folder, "*.xml")):
         try:
-            info = extract_xml_info(path)
-            info['filename'] = os.path.basename(path)
-            results.append(info)
+            all_rows.extend(extract_all_from_file(xml_file))
         except Exception as e:
-            print(f"Error processing {path}: {e}")
-    return results
+            print(f"Failed to process {xml_file}: {e}")
+    return pd.DataFrame(all_rows)
 
-# Example usage:
-# directory = '/mnt/data/'
-# results = parse_directory(directory)
-# import json; print(json.dumps(results, indent=2))
+# Usage
+# df = process_folder("/mnt/data/")
+# display(df.head())
 
-
---------------
-
-import pandas as pd
-from typing import List, Dict, Any, Optional
-
-def format_common_info(doc: Dict[str, Any]) -> Dict[str, Any]:
-    """Extract and format the common info shared across issuers in a doc."""
-    return {
-        'filename': doc.get('filename'),
-        'publication_date': doc.get('publication_date'),
-        'broker_name': doc.get('broker_name'),
-        'analysts': ', '.join([a['name'] for a in doc.get('analysts', [])]),
-        'product_asset_class': doc.get('product_asset_class'),
-        'report_types': ', '.join(doc.get('report_types', [])),
-        'event_types': ', '.join(doc.get('event_types', [])),
-    }
-
-def format_issuer_row(
-    common_info: Dict[str, Any],
-    issuer: Optional[Dict[str, Any]] = None,
-    ticker: Optional[Dict[str, Any]] = None
-) -> Dict[str, Any]:
-    """Combine common info, issuer, and ticker info into one row."""
-    row = common_info.copy()
-    row.update({
-        'issuer_name': issuer.get('issuer_name') if issuer else None,
-        'asset_class': issuer.get('asset_class') if issuer else None,
-        'ticker_id_type': ticker.get('id_type') if ticker else None,
-        'ticker_id_value': ticker.get('id_value') if ticker else None,
-        'ticker_exchange': ticker.get('exchange') if ticker else None,
-        'price_target_value': (issuer.get('price_target') or {}).get('value') if issuer else None,
-        'price_target_currency': (issuer.get('price_target') or {}).get('currency') if issuer else None,
-        'rating': issuer.get('rating') if issuer else None,
-    })
-    return row
-
-def flatten_issuer_rows(parsed_docs: List[Dict[str, Any]]) -> pd.DataFrame:
-    """
-    Returns a DataFrame with one row per issuer-ticker per document.
-    """
-    rows = []
-    for doc in parsed_docs:
-        common_info = format_common_info(doc)
-        issuers = doc.get('issuers', [])
-        if not issuers:
-            # For macro/no-issuer reports
-            rows.append(format_issuer_row(common_info))
-            continue
-        for issuer in issuers:
-            tickers = issuer.get('tickers', []) or [{}]  # At least one row per issuer
-            for ticker in tickers:
-                rows.append(format_issuer_row(common_info, issuer, ticker))
-    return pd.DataFrame(rows)
-
-# Example usage:
-# df = flatten_issuer_rows(parsed_docs)
